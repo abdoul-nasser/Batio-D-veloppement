@@ -188,6 +188,11 @@
                                         Devis
                                     </a>
                                 </li>
+                                 <!-- Button Trigger Modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Open modal
+  </button>
+  <!-- End Button Trigger Modal -->
                                 <!-- End Button -->
                             </ul>
                         </div>
@@ -576,7 +581,177 @@
 
 
 
-
+   
+  
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!-- Header -->
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Step form</h5>
+            <button type="button" class="btn btn-icon btn-sm btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
+                <i class="tio-clear tio-lg" aria-hidden="true"></i>
+            </button>
+            </div>
+            <!-- End Header -->
+    
+            <!-- Body -->
+            <div class="modal-body">
+            <!-- Step Form -->
+            <form class="js-step-form"
+                    data-hs-step-form-options='{
+                    "progressSelector": "#modalStepFormProgress",
+                    "stepsSelector": "#modalStepFormContent",
+                    "endSelector": "#createProjectFinishBtn"
+                    }'>
+                <!-- Step -->
+                <ul id="modalStepFormProgress" class="js-step-progress step step-sm step-icon-sm step-inline step-item-between mb-7">
+                <li class="step-item">
+                    <a class="step-content-wrapper" href="javascript:;"
+                    data-hs-step-form-next-options='{
+                        "targetSelector": "#modalStepDetails"
+                    }'>
+                    <span class="step-icon step-icon-soft-dark">1</span>
+                    <div class="step-content">
+                        <span class="step-title">Details</span>
+                    </div>
+                    </a>
+                </li>
+    
+                <li class="step-item">
+                    <a class="step-content-wrapper" href="javascript:;"
+                    data-hs-step-form-next-options='{
+                        "targetSelector": "#modalStepTerms"
+                    }'>
+                    <span class="step-icon step-icon-soft-dark">2</span>
+                    <div class="step-content">
+                        <span class="step-title">Terms</span>
+                    </div>
+                    </a>
+                </li>
+    
+                <li class="step-item">
+                    <a class="step-content-wrapper" href="javascript:;"
+                    data-hs-step-form-next-options='{
+                        "targetSelector": "#modalStepMembers"
+                    }'>
+                    <span class="step-icon step-icon-soft-dark">3</span>
+                    <div class="step-content">
+                        <span class="step-title">Members</span>
+                    </div>
+                    </a>
+                </li>
+                </ul>
+                <!-- End Step -->
+    
+                <!-- Content Step Form -->
+                <div id="modalStepFormContent">
+                <div id="modalStepDetails" class="active">
+                    <h4>Details content</h4>
+    
+                    <p>...</p>
+    
+                    <!-- Footer -->
+                    <div class="d-flex align-items-center">
+                    <div class="ml-auto">
+                        <button type="button" class="btn btn-primary"
+                                data-hs-step-form-next-options='{
+                                "targetSelector": "#modalStepTerms"
+                                }'>
+                        Next <i class="tio-chevron-right"></i>
+                        </button>
+                    </div>
+                    </div>
+                    <!-- End Footer -->
+                </div>
+    
+                <div id="modalStepTerms" style="display: none;">
+                    <h4>Terms content</h4>
+    
+                    <p>...</p>
+    
+                    <!-- Footer -->
+                    <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-ghost-secondary mr-2"
+                        data-hs-step-form-prev-options='{
+                        "targetSelector": "#modalStepDetails"
+                        }'>
+                        <i class="tio-chevron-left"></i> Previous step
+                    </button>
+    
+                    <div class="ml-auto">
+                        <button type="button" class="btn btn-primary"
+                                data-hs-step-form-next-options='{
+                                "targetSelector": "#modalStepMembers"
+                                }'>
+                        Next <i class="tio-chevron-right"></i>
+                        </button>
+                    </div>
+                    </div>
+                    <!-- End Footer -->
+                </div>
+    
+                <div id="modalStepMembers" style="display: none;">
+                    <h4>Members content</h4>
+    
+                    <p>...</p>
+    
+                    <!-- Footer -->
+                    <div class="d-sm-flex align-items-center">
+                    <button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 mr-2"
+                        data-hs-step-form-prev-options='{
+                        "targetSelector": "#modalStepTerms"
+                        }'>
+                        <i class="tio-chevron-left"></i> Previous step
+                    </button>
+    
+                    <div class="d-flex justify-content-end ml-auto">
+                        <button type="button" class="btn btn-white mr-2" data-dismiss="modal" aria-label="Close">Cancel</button>
+                        <button id="createProjectFinishBtn" type="button" class="btn btn-primary">Create project</button>
+                    </div>
+                    </div>
+                    <!-- End Footer -->
+                </div>
+                </div>
+                <!-- End Content Step Form -->
+    
+                <!-- Message Body -->
+                <div id="modalStepSuccessMessage" style="display:none;">
+                <div class="text-center">
+                    <img class="img-fluid mb-3" src="../assets/svg/illustrations/create.svg" alt="Image Description" style="max-width: 15rem;">
+    
+                    <div class="mb-4">
+                    <h2>Successful!</h2>
+                    <p>New project has been successfully created.</p>
+                    </div>
+    
+                    <div class="d-flex justify-content-center">
+                    <a class="btn btn-white mr-3" href="#">
+                        <i class="tio-chevron-left ml-1"></i> Back to projects
+                    </a>
+                    <a class="btn btn-primary" href="#">
+                        <i class="tio-city mr-1"></i> Add new project
+                    </a>
+                    </div>
+                </div>
+                </div>
+                <!-- End Message Body -->
+            </form>
+            <!-- End Step Form -->
+            </div>
+            <!-- End Body -->
+    
+            <!-- Footer -->
+            <div class="modal-footer">
+            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Continue</button>
+            </div>
+            <!-- End Footer -->
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
 
   <!-- JS Global Compulsory -->
   <script src="js/jquery.min.js"></script>
@@ -588,6 +763,7 @@
   <script src="js/hs-unfold.min.js"></script>
   <script src="js/hs-mega-menu.min.js"></script>
   <script src="js/typed.min.js"></script>
+  <script src="js/hs-step-form.min.js"></script>
 
 
   <script src="js/hs-go-to.min.js"></script>
@@ -632,13 +808,21 @@
     });
 
      // initialization of text animation (typing)
-     var typed = new Typed(".js-text-animation", {
+    var typed = new Typed(".js-text-animation", {
         strings: ["startup.", "future.", "success."],
         typeSpeed: 90,
         loop: true,
         backSpeed: 30,
         backDelay: 2500
-      });
+    });
+
+    //Step Forms
+    $(document).on('ready', function () {
+        // initialization of step form
+        $('.js-step-form').each(function () {
+        var stepForm = new HSStepForm($(this)).init();
+        });
+    });
 
   </script>
 
