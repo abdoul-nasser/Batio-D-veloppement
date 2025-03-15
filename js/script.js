@@ -32,3 +32,23 @@ $(document).on('ready', function () {
     // initialization of header
     var header = new HSHeader($('#header')).init();
   });
+
+  //Active class
+  function setActiveNavLink() {
+    let navLinks = document.querySelectorAll("#navBarWithDropdown .navbar-nav-item");
+    let currentPage = window.location.pathname.split("/").pop(); // Récupère le nom du fichier HTML
+
+    if (currentPage === "") {
+        currentPage = "index.html"; // Par défaut, considère index.html si l'URL est vide
+    }
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+}
+
+

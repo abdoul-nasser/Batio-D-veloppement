@@ -15,10 +15,10 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
 
   <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="css/font-awesome/css/fontawesome.min.css">
-  <link rel="stylesheet" href="css/hs-mega-menu.min.css">
-  <link rel="stylesheet" href="css/hs-unfold.min.css">
+  <link rel="stylesheet" href="../assets/css/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/font-awesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="../assets/css/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="../assets/css/hs-unfold.min.css">
 
 
   <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/all.min.css">
@@ -26,17 +26,119 @@
   <link rel="stylesheet" href="../../assets/vendor/leaflet/dist/leaflet.css">
 
   <!-- CSS Front Template -->
-  <link rel="stylesheet" href="css/theme.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
   
 </head>
 <body>
+
+  <!-- ========== HEADER ========== -->
+  <div id="header-container"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" 
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog d-flex" style="max-width: 850px;">
+        <div class="modal-content mx-auto" role="document">
+            <div class="modal-header border-b-2">
+            <h5 class="modal-title text-center" id="staticBackdropLabel">Choisir un service pour le devis</h5>
+            <button type="button" class="btn btn-xs btn-icon btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
+                <i class="tio-clear tio-lg"></i>
+            </button>
+            </div>
+            <div class="modal-body py-4">
+                <div class="row mx-n2">
+                    <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                        <!-- Icon Block -->
+                        <a class="card card-frame h-100" href="pages/demenagement.html">
+                            <div class="card-body p-md-3">
+                                <div class="media">
+                                    <figure class="w-100 max-w-6rem mr-3">
+                                        <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                    </figure>
+                                    <div class="media-body">
+                                        <h5>Déménagement</h5>
+                                        <p class="text-body pb-0 small">
+                                            Chat live with community members to get your questions answered.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Icon Block -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                        <!-- Icon Block -->
+                        <a class="card card-frame h-100" href="pages/demolition.html">
+                            <div class="card-body p-md-3">
+                                <div class="media">
+                                    <figure class="w-100 max-w-6rem mr-3">
+                                        <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                    </figure>
+                                    <div class="media-body">
+                                        <h5>Démolition</h5>
+                                        <p class="text-body pb-0 small">
+                                            Chat live with community members to get your questions answered.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Icon Block -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                        <!-- Icon Block -->
+                        <a class="card card-frame h-100" href="pages/Placement.html">
+                            <div class="card-body p-md-3">
+                                <div class="media">
+                                    <figure class="w-100 max-w-6rem mr-3">
+                                        <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                    </figure>
+                                    <div class="media-body">
+                                        <h5>Placement de personnel</h5>
+                                        <p class="text-body pb-0 small">
+                                            Chat live with community members to get your questions answered.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Icon Block -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                        <!-- Icon Block -->
+                        <a class="card card-frame h-100" href="pages/services-entreprises.html">
+                            <div class="card-body p-md-3">
+                                <div class="media">
+                                    <figure class="w-100 max-w-6rem mr-3">
+                                        <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                    </figure>
+                                    <div class="media-body">
+                                        <h5>Services aux entreprises</h5>
+                                        <p class="text-body pb-0 small">
+                                            Chat live with community members to get your questions answered.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Icon Block -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer py-2">
+            <button type="button" class="btn btn-sm btn-white" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+  <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN ========== -->
   <main id="content" role="main">
     <!-- Hero Section -->
     <div class="position-relative">
-      <div class="bg-img-hero" style="background-image: url(svg/abstract-shapes-12.svg);">
+      <div class="bg-img-hero" style="background-image: url(../assets/svg/abstract-shapes-12.svg);">
         <div class="container space-top-3 space-top-lg-4 space-bottom-2 position-relative z-index-2">
           <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-5 mb-md-9">
             <h1>Contact us</h1>
@@ -46,10 +148,10 @@
           <div class="row">
             <div class="col-md-4 mb-3 mb-md-0 mb-md-n11">
               <!-- Card -->
-              <a class="card text-center h-100 transition-3d-hover" href="index.html">
+              <a class="card text-center h-100 transition-3d-hover" href="../index.html">
                 <div class="card-body p-lg-5">
                   <figure class="max-w-8rem w-100 mx-auto mb-4">
-                    <img class="img-fluid" src="svg/icon-13.svg" alt="SVG">
+                    <img class="img-fluid" src="../assets/svg/icon-13.svg" alt="SVG">
                   </figure>
                   <h3 class="h4">Services</h3>
                   <p class="text-body mb-0">We're here to help with any questions or code.</p>
@@ -66,7 +168,7 @@
               <a class="card text-center h-100 transition-3d-hover" href="pages/faq.html">
                 <div class="card-body p-lg-5">
                   <figure class="max-w-8rem w-100 mx-auto mb-4">
-                    <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                    <img class="img-fluid" src="../assets/svg/icon-4.svg" alt="SVG">
                   </figure>
                   <h3 class="h4">FAQ</h3>
                   <p class="text-body mb-0">Search our FAQ for answers to anything you might ask.</p>
@@ -83,7 +185,7 @@
               <a class="card text-center h-100 transition-3d-hover" href="#">
                 <div class="card-body p-lg-5">
                   <figure class="max-w-8rem w-100 mx-auto mb-4">
-                    <img class="img-fluid" src="svg/icon-31.svg" alt="SVG">
+                    <img class="img-fluid" src="../assets/svg/icon-31.svg" alt="SVG">
                   </figure>
                   <h3 class="h4">Devis</h3>
                   <p class="text-body mb-0">Check out our development quickstart guide.</p>
@@ -230,53 +332,26 @@
     </div>
     <!-- End Contact Form Section -->
 
-    <!-- 
-    <div class="container-fluid mb-3">
-      <div id="map" class="min-h-450rem rounded"
-           data-hs-leaflet-options='{
-             "map": {
-               "scrollWheelZoom": false,
-               "coords": [37.4040344, -122.0289704]
-             },
-             "marker": [
-               {
-                 "coords": [37.4040344, -122.0289704],
-                 "icon": {
-                   "iconUrl": "../../assets/svg/components/map-pin.svg",
-                   "iconSize": [50, 45]
-                 },
-                 "popup": {
-                   "text": "153 Williamson Plaza, Maggieberg"
-                 }
-               }
-             ]
-            }'></div>
-    </div>
-    -->
   </main>
   <!-- ========== END MAIN ========== -->
 
  
 
   <!-- JS Global Compulsory -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery-migrate.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
 
   <!-- Importation de EmailJS -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-  <script src="../../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
   <!-- JS Implementing Plugins --> 
-  <script src="js/hs-header.min.js"></script>
-  <script src="js/hs-unfold.min.js"></script>
-  <script src="js/hs-mega-menu.min.js"></script>
-  <script src="js/typed.min.js"></script>
-  <script src="js/hs-show-animation.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
+  <script src="../assets/js/hs-header.min.js"></script>
+  <script src="../assets/js/hs-unfold.min.js"></script>
+  <script src="../assets/js/hs-mega-menu.min.js"></script>
+  <script src="../assets/js/typed.min.js"></script>
+  <script src="../assets/js/hs-show-animation.min.js"></script>
+  <script src="../assets/js/jquery.validate.min.js"></script>
 
 
   <script src="../../assets/vendor/hs-header/dist/hs-header.min.js"></script>
@@ -287,9 +362,9 @@
   <script src="../../assets/vendor/leaflet/dist/leaflet.js"></script>
 
   <!-- JS Front -->
-  <script src="js/hs.core.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/dist/js/hs.validation.js"></script>
+  <script src="../assets/js/hs.core.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/dist/js/hs.validation.js"></script>
 
 
   <!-- JS Plugins Init. -->

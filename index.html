@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="shortcut icon" href="assets/favicon.ico">
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
@@ -28,180 +28,107 @@
 <body>
     
     <!-- ========== HEADER ========== -->
-    <header id="header" class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide"
-          data-hs-header-options='{
-            "fixMoment": 1000,
-            "fixEffect": "slide"
-          }'>
-
-        <header id="headerWithDropdown" class="header">
-            <!-- Topbar -->
-            <div class="container header-hide-content pt-20">
-                <div class="d-flex align-items-center">
-                <!-- Language -->
-                <div class="hs-unfold">
-                    <a class="js-hs-unfold-invoker dropdown-nav-link dropdown-toggle d-flex align-items-center d-flex" href="javascript:;"
-                    data-hs-unfold-options='{
-                        "target": "#languageDropdown",
-                        "type": "css-animation",
-                        "event": "hover",
-                        "hideOnScroll": "true"
-                    }'>
-                        <img class="dropdown-item-icon" src="flags/ca.svg" alt="SVG">
-                        <span class="d-inline-block d-sm-none">CA</span>
-                        <span class="d-none d-sm-inline-block">Canada</span>
-                    </a>
-            
-                    <div id="languageDropdown" class="hs-unfold-content dropdown-menu">
-                    <a class="dropdown-item active" href="#">English</a>
-                    <a class="dropdown-item" href="#">Francais</a>
-                    </div>
+    <div id="header-container"></div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" 
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog d-flex" style="max-width: 850px;">
+            <div class="modal-content mx-auto" role="document">
+                <div class="modal-header border-b-2">
+                <h5 class="modal-title text-center" id="staticBackdropLabel">Choisir un service pour le devis</h5>
+                <button type="button" class="btn btn-xs btn-icon btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
+                    <i class="tio-clear tio-lg"></i>
+                </button>
                 </div>
-                <!-- End Language -->
-            
-                <div class="ml-auto">
-                    <!-- Jump To -->
-                    <div class="hs-unfold d-sm-none mr-2">
-                        <a class="js-hs-unfold-invoker dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;"
-                            data-hs-unfold-options='{
-                            "target": "#jumpToDropdown",
-                            "type": "css-animation",
-                            "event": "hover",
-                            "hideOnScroll": "true"
-                            }'>
-                            phone
-                        </a>
-            
-                        <div id="jumpToDropdown" class="hs-unfold-content dropdown-menu">
-                            <a class="dropdown-item" href="#">+1 (062) 109-9222</a>
-                        </div>
-                    </div>
-                    <!-- End Jump To -->
-            
-                    <!-- Links -->
-                    <div class="nav nav-sm nav-y-0 d-none d-sm-flex ml-sm-auto">
-                        <a class="nav-link" href="#">(+1) 690 844 833</a>
-                    </div>
-                    <!-- End Links -->
-                </div>
-            
-                <ul class="ml-auto list-inline ml-2 mb-0">
-                    <!-- facebook -->
-                    <li class="list-inline-item">
-                        <a class="btn btn-xs btn-icon btn-ghost-secondary" href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <!-- End facebook -->
-            
-                    <!-- linkedin -->
-                    <li class="list-inline-item">
-                        <a class="btn btn-xs btn-icon btn-ghost-secondary" href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <!-- End linkedin -->
-            
-                    <!-- twitter -->
-                    <li class="list-inline-item">
-                        <a class="btn btn-xs btn-icon btn-ghost-secondary" href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <!-- End twitter -->
-                </ul>
-                </div>
-            </div>
-            <!-- End Topbar -->
-
-            <div class="header-section">
-                <div id="logoAndNavWithDropdown" class="container">
-                    <!-- Nav -->
-                    <nav class="js-mega-menu navbar navbar-expand-lg">
-                        <!-- Logo -->
-                        <a class="navbar-brand" href="index.html" aria-label="Front">
-                            <img src="logos/.svg" alt="Logo">
-                        </a>
-                        <!-- End Logo -->
-                
-                        <!-- Responsive Toggle Button -->
-                        <button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle"
-                                aria-label="Toggle navigation"
-                                aria-expanded="false"
-                                aria-controls="navBarWithDropdown"
-                                data-toggle="collapse"
-                                data-target="#navBarWithDropdown">
-                            <span class="navbar-toggler-default">
-                            <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
-                            </svg>
-                            </span>
-                            <span class="navbar-toggler-toggled">
-                            <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
-                            </svg>
-                            </span>
-                        </button>
-                        <!-- End Responsive Toggle Button -->
-                
-                        <!-- Navigation -->
-                        <div id="navBarWithDropdown" class="collapse navbar-collapse">
-                            <ul class="navbar-nav">
-                                <li class="navbar-nav-item active">
-                                    <a class="nav-link" href="index.html">Accueil</a>
-                                </li>
-                                <li class="navbar-nav-item">
-                                    <a class="nav-link" href="about-us.html">À propos</a>
-                                </li>
-                                <!-- Dropdown -->
-                                <li class="hs-unfold navbar-nav-item">
-                                    <a  class="js-hs-unfold-invoker dropdown-toggle nav-link nav-link-toggle" 
-                                        href="javascript:;"
-                                        data-hs-unfold-options='{
-                                            "target": "#basicDropdownHover",
-                                            "type": "css-animation",
-                                            "event": "hover"  }'>
-                                            Services
-                                    <!-- href="javascript:;" -->
-                                    </a>
-                                
-                                    <div id="basicDropdownHover" 
-                                        class="hs-unfold-content dropdown-menu text-capitalise" 
-                                        style="border-top: 'primary';min-width: 230px;">
-                                            <a class="dropdown-item active" href="#">déménagement</a>
-                                            <a class="dropdown-item" href="#">démolition</a>
-                                            <a class="dropdown-item" href="#">placement de personnel</a>
-                                            <a class="dropdown-item" href="#">services aux entreprises</a>
+                <div class="modal-body py-4">
+                    <div class="row mx-n2">
+                        <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                            <!-- Icon Block -->
+                            <a class="card card-frame h-100" href="pages/demenagement.html">
+                                <div class="card-body p-md-3">
+                                    <div class="media">
+                                        <figure class="w-100 max-w-6rem mr-3">
+                                            <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h5>Déménagement</h5>
+                                            <p class="text-body pb-0 small">
+                                                Chat live with community members to get your questions answered.
+                                            </p>
+                                        </div>
                                     </div>
-                                </li>
-                                <!-- End Dropdown -->
-                                <li class="navbar-nav-item">
-                                    <a class="nav-link" href="faq.html">FAQ</a>
-                                </li>
-                                <li class="navbar-nav-item">
-                                    <a class="nav-link" href="contacts.html">Contact</a>
-                                </li>
-                                <!-- Button -->
-                                <li class="nav-item navbar-nav-last-item">
-                                    <!-- Button Trigger Modal -->
-                                    <button type="button" class="btn btn-sm btn-primary transition-3d-hover" data-toggle="modal" 
-                                        data-target="#exampleModal">
-                                        Devis
-                                    </button>
-                                    <!-- End Button Trigger Modal -->
-                                </li>
-                                <!-- End Button -->
-                            </ul>
+                                </div>
+                            </a>
+                            <!-- End Icon Block -->
                         </div>
-                        <!-- End Navigation -->
-                    </nav>
-                    <!-- End Nav -->
+                        <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                            <!-- Icon Block -->
+                            <a class="card card-frame h-100" href="pages/demolition.html">
+                                <div class="card-body p-md-3">
+                                    <div class="media">
+                                        <figure class="w-100 max-w-6rem mr-3">
+                                            <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h5>Démolition</h5>
+                                            <p class="text-body pb-0 small">
+                                                Chat live with community members to get your questions answered.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- End Icon Block -->
+                        </div>
+                        <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                            <!-- Icon Block -->
+                            <a class="card card-frame h-100" href="pages/Placement.html">
+                                <div class="card-body p-md-3">
+                                    <div class="media">
+                                        <figure class="w-100 max-w-6rem mr-3">
+                                            <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h5>Placement de personnel</h5>
+                                            <p class="text-body pb-0 small">
+                                                Chat live with community members to get your questions answered.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- End Icon Block -->
+                        </div>
+                        <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                            <!-- Icon Block -->
+                            <a class="card card-frame h-100" href="pages/services-entreprises.html">
+                                <div class="card-body p-md-3">
+                                    <div class="media">
+                                        <figure class="w-100 max-w-6rem mr-3">
+                                            <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h5>Services aux entreprises</h5>
+                                            <p class="text-body pb-0 small">
+                                                Chat live with community members to get your questions answered.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- End Icon Block -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer py-2">
+                <button type="button" class="btn btn-sm btn-white" data-dismiss="modal">Close</button>
                 </div>
             </div>
-        </header>
-    </header>
+            </div>
+        </div>
+        <!-- End Modal -->
     <!-- ========== END HEADER ========== -->
-
+    
 
     <!-- ========== MAIN CONTENT ========== -->
     <main id="content" role="main">
@@ -221,12 +148,12 @@
                                 </span>
                                 </h1>
                                 <p class="lead">
-                                    Front's feature-rich designed demo pages help you create the best possible product.
+                                    Grâce à notre expertise et à notre engagement envers la qualité, nous vous garantissons des services fiables et efficaces.
                                 </p>
                             </div>
-
+                            <!--
                             <a class="btn btn-primary btn-wide transition-3d-hover" href="../pages/login-simple.html">Get Started</a>
-                            <a class="btn btn-link btn-wide" href="#">Learn More <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+                            <a class="btn btn-link btn-wide" href="#">Learn More <i class="fas fa-angle-right fa-sm ml-1"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -244,7 +171,7 @@
                         <use xlink:href="#mainHeroSVG1"/>
                         </clipPath>
                         <g transform="matrix(1 0 0 1 0 0)" clip-path="url(#mainHeroSVG2)">
-                        <image width="750" height="750" xlink:href="images/750x750/img2.jpg" transform="matrix(1.4462 0 0 1.4448 52.8755 0)"></image>
+                        <image width="750" height="750" xlink:href="assets/images/750x750/img2.jpg" transform="matrix(1.4462 0 0 1.4448 52.8755 0)"></image>
                         </g>
                     </svg>
                 </figure>
@@ -274,7 +201,7 @@
                             <a class="btn btn-sm btn-light transition-3d-hover" href="pages/Demenagement.html">voir plus <i class="fas fa-angle-right ml-1"></i></a>
                         </div>
                         <div class="position-absolute right-0 bottom-0 w-50 mb-n3 mr-n4">
-                            <img class="img-fluid" src="images/img15.png" alt="Image Description">
+                            <img class="img-fluid" src="assets/images/img15.png" alt="Image Description">
                         </div>
                     </div>
                     <!-- End Card -->
@@ -291,7 +218,7 @@
                             <a class="btn btn-sm btn-light transition-3d-hover" href="pages/demolition.html">voir plus <i class="fas fa-angle-right ml-1"></i></a>
                         </div>
                         <div class="position-absolute right-0 bottom-0 w-50 mb-n3 mr-n4">
-                            <img class="img-fluid" src="images/img15.png" alt="Image Description">
+                            <img class="img-fluid" src="assets/images/img15.png" alt="Image Description">
                         </div>
                     </div>
                     <!-- End Card -->
@@ -308,7 +235,7 @@
                         <a class="btn btn-sm btn-light transition-3d-hover" href="pages/placement.html">voir plus <i class="fas fa-angle-right ml-1"></i></a>
                     </div>
                     <div class="position-absolute right-0 bottom-0 w-50 mb-n3 mr-n4" style="z-index: 1;">
-                        <img class="img-fluid" src="images/img12.png" alt="Image Description">
+                        <img class="img-fluid" src="assets/images/img12.png" alt="Image Description">
                     </div>
                     </div>
                     <!-- End Card -->
@@ -323,7 +250,7 @@
                         <a class="btn btn-sm btn-light transition-3d-hover" href="pages/services-entreprise.html">voir plus <i class="fas fa-angle-right ml-1"></i></a>
                     </div>
                     <div class="position-absolute right-0 bottom-0 w-50 mb-n3 mr-n4" style="z-index: 1;">
-                        <img class="img-fluid" src="images/img12.png" alt="Image Description">
+                        <img class="img-fluid" src="assets/images/img12.png" alt="Image Description">
                     </div>
                     </div>
                     <!-- End Card -->
@@ -341,12 +268,12 @@
                 <div class="col-lg-3 d-none d-lg-block">
                 <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-light" data-options='{direction: "reverse"}' style="overflow: visible;">
                     <div data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"4", mid:"0", final:"-4"}]'>
-                    <img class="img-fluid rounded shadow-lg" src="images/400x600/img31.jpg" alt="Image Description">
+                    <img class="img-fluid rounded shadow-lg" src="assets/images/400x600/img31.jpg" alt="Image Description">
 
                     <!-- SVG Shapes -->
                     <figure class="max-w-15rem w-100 position-absolute bottom-0 left-0 z-index-n1">
                         <div class="mb-n7 ml-n7">
-                        <img class="img-fluid" src="svg/dots-5.svg" alt="Image Description">
+                        <img class="img-fluid" src="assets/svg/dots-5.svg" alt="Image Description">
                         </div>
                     </figure>
                     <!-- End SVG Shapes -->
@@ -372,16 +299,15 @@
                     <div class="col-lg-8 mb-3 mb-lg-0">
                         <div class="pr-lg-5">
                         <blockquote class="h3 font-weight-normal mb-4">
-                            simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-                            has been the industry's standard dummy text ever since the 1500s, when 
-                            an unknown printer took a galley of type.
+                            Une équipe professionnelle et ponctuelle ! Mon déménagement 
+                            s'est déroulé sans encombre. Merci Batio Développement !
                         </blockquote>
                         <div class="media">
                             <div class="avatar avatar-xs avatar-circle d-lg-none mr-2">
-                            <img class="avatar-img" src="../../assets/img/100x100/img19.jpg" alt="Image Description">
+                            <img class="avatar-img" src="assets/img/100x100/img19.jpg" alt="Image Description">
                             </div>
                             <div class="media-body">
-                            <span class="text-dark font-weight-bold">Lewis</span>
+                            <span class="text-dark font-weight-bold">Sophie M.</span>
                             <span class="font-size-1">&mdash; happy customer</span>
                             </div>
                         </div>
@@ -411,18 +337,18 @@
         <div class="container space-2 space-lg-3">
         <div class="row justify-content-lg-between">
             <div class="col-lg-5 order-lg-2 pl-lg-0">
-            <div class="bg-img-hero h-100 min-h-450rem rounded" style="background-image: url(images/600x400/img19.jpg);"></div>
+            <div class="bg-img-hero h-100 min-h-450rem rounded" style="background-image: url(assets/images/600x400/img19.jpg);"></div>
             </div>
 
             <div class="col-lg-6 order-lg-1">
             <div class="pt-8 pb-lg-8">
                 <!-- Title -->
                 <div class="mb-5 mb-md-7">
-                    <h2 class="mb-3">simply dummy text of the printing and typesetting industry</h2>
+                    <h2 class="mb-3">Une solution complète et performante pour tous vos besoins</h2>
                     <p>
-                        simply dummy text of the printing and typesetting industry
-                        simply dummy text of the printing and typesetting industry
-                        simply dummy text of the printing and typesetting industry
+                        Que vous soyez une entreprise en pleine expansion, un professionnel indépendant ou une 
+                        société cherchant à optimiser ses services, Batio Développement Inc. vous accompagne 
+                        avec des solutions sur mesure pour garantir efficacité et sérénité.
                     </p>
                 </div>
                 <!-- End Title -->
@@ -430,33 +356,41 @@
                 <div class="row">
                 <div class="col-6 mb-3 mb-md-5">
                     <div class="pr-lg-4">
-                        <span class="js-counter h2 text-primary">-</span>
-                        <span class="h2 text-primary">+</span>
-                        <p>simply dummy text of the printing and typesetting industry.</p>
+                        <span class="js-counter h2 text-primary"></span>
+                        <span class="h3 text-primary">+150</span>
+                        <p>
+                            Clients satisfaits ayant bénéficié de nos services en déménagement, démolition et placement de personnel.
+                        </p>
                     </div>
                 </div>
 
                 <div class="col-6 mb-3 mb-md-5">
                     <div class="pr-lg-4">
-                        <span class="js-counter h2 text-primary">-</span>
-                        <span class="h2 text-primary">+</span>
-                        <p>simply dummy text of the printing and typesetting industry.</p>
+                        <span class="js-counter h2 text-primary"></span>
+                        <span class="h3 text-primary">+10 ans</span>
+                        <p>
+                            D'expérience dans l'accompagnement des entreprises et des particuliers avec des prestations de haute qualité.
+                        </p>
                     </div>
                 </div>
 
                 <div class="col-6">
                     <div class="pr-lg-4">
-                        <span class="js-counter h2 text-primary">-</span>
-                        <span class="h2 text-primary">%</span>
-                        <p>simply dummy text of the printing and typesetting industry.</p>
+                        <span class="js-counter h2 text-primary"></span>
+                        <span class="h3 text-primary">98%</span>
+                        <p>
+                            De taux de satisfaction grâce à notre engagement envers l'excellence et notre approche personnalisée.
+                        </p>
                     </div>
                 </div>
 
                 <div class="col-6">
                     <div class="pr-lg-4">
-                        <span class="js-counter h2 text-primary">-</span>
-                        <span class="h2 text-primary">+</span>
-                        <p>simply dummy text of the printing and typesetting industry.</p>
+                        <span class="js-counter h2 text-primary"></span>
+                        <span class="h3 text-primary">24/7</span>
+                        <p>
+                            Un service client disponible pour répondre à vos questions et vous accompagner dans vos projets.
+                        </p>
                     </div>
                 </div>
                 </div>
@@ -510,7 +444,7 @@
                                 <use xlink:href="#SVGID_1_"/>
                             </clipPath>
                             <g transform="matrix(1 0 0 1 0 1.907349e-06)" style="clip-path:url(#SVGID_2_);">
-                                <image width="100" height="100" xlink:href="images/100x100/img1.jpg" transform="matrix(0.36 0 0 0.36 32.8571 25.1429)"></image>
+                                <image width="100" height="100" xlink:href="asstes/images/100x100/img1.jpg" transform="matrix(0.36 0 0 0.36 32.8571 25.1429)"></image>
                             </g>
                             <use xlink:href="#SVGID_1_" fill="none" stroke="#FFFFFF" stroke-width="4"/>
                             <defs>
@@ -520,7 +454,7 @@
                                 <use xlink:href="#SVGID_3_"/>
                             </clipPath>
                             <g style="clip-path:url(#SVGID_4_);">
-                                <image width="100" height="100" xlink:href="images/100x100/img3.jpg" transform="matrix(0.36 0 0 0.36 16.5714 2.8571)"></image>
+                                <image width="100" height="100" xlink:href="asstes/images/100x100/img3.jpg" transform="matrix(0.36 0 0 0.36 16.5714 2.8571)"></image>
                             </g>
                             <use xlink:href="#SVGID_3_" fill="none" stroke="#FFFFFF" stroke-width="4"/>
                             <defs>
@@ -530,7 +464,7 @@
                                 <use xlink:href="#SVGID_5_"/>
                             </clipPath>
                             <g style="clip-path:url(#SVGID_6_);">
-                                <image width="100" height="100" xlink:href="images/100x100/img9.jpg" transform="matrix(0.3771 0 0 0.3771 2 24.2857)"></image>
+                                <image width="100" height="100" xlink:href="asstes/images/100x100/img9.jpg" transform="matrix(0.3771 0 0 0.3771 2 24.2857)"></image>
                             </g>
                             <use xlink:href="#SVGID_5_" fill="none" stroke="#FFFFFF" stroke-width="4"/>
                             </svg>
@@ -568,179 +502,7 @@
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
 
-
-
-   
-  
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <!-- Header -->
-            <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Step form</h5>
-            <button type="button" class="btn btn-icon btn-sm btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
-                <i class="tio-clear tio-lg" aria-hidden="true"></i>
-            </button>
-            </div>
-            <!-- End Header -->
-    
-            <!-- Body -->
-            <div class="modal-body">
-            <!-- Step Form -->
-            <form class="js-step-form"
-                    data-hs-step-form-options='{
-                    "progressSelector": "#modalStepFormProgress",
-                    "stepsSelector": "#modalStepFormContent",
-                    "endSelector": "#createProjectFinishBtn"
-                    }'>
-                <!-- Step -->
-                <ul id="modalStepFormProgress" class="js-step-progress step step-sm step-icon-sm step-inline step-item-between mb-7">
-                <li class="step-item">
-                    <a class="step-content-wrapper" href="javascript:;"
-                    data-hs-step-form-next-options='{
-                        "targetSelector": "#modalStepDetails"
-                    }'>
-                    <span class="step-icon step-icon-soft-dark">1</span>
-                    <div class="step-content">
-                        <span class="step-title">Details</span>
-                    </div>
-                    </a>
-                </li>
-    
-                <li class="step-item">
-                    <a class="step-content-wrapper" href="javascript:;"
-                    data-hs-step-form-next-options='{
-                        "targetSelector": "#modalStepTerms"
-                    }'>
-                    <span class="step-icon step-icon-soft-dark">2</span>
-                    <div class="step-content">
-                        <span class="step-title">Terms</span>
-                    </div>
-                    </a>
-                </li>
-    
-                <li class="step-item">
-                    <a class="step-content-wrapper" href="javascript:;"
-                    data-hs-step-form-next-options='{
-                        "targetSelector": "#modalStepMembers"
-                    }'>
-                    <span class="step-icon step-icon-soft-dark">3</span>
-                    <div class="step-content">
-                        <span class="step-title">Members</span>
-                    </div>
-                    </a>
-                </li>
-                </ul>
-                <!-- End Step -->
-    
-                <!-- Content Step Form -->
-                <div id="modalStepFormContent">
-                <div id="modalStepDetails" class="active">
-                    <h4>Details content</h4>
-    
-                    <p>...</p>
-    
-                    <!-- Footer -->
-                    <div class="d-flex align-items-center">
-                    <div class="ml-auto">
-                        <button type="button" class="btn btn-primary"
-                                data-hs-step-form-next-options='{
-                                "targetSelector": "#modalStepTerms"
-                                }'>
-                        Next <i class="tio-chevron-right"></i>
-                        </button>
-                    </div>
-                    </div>
-                    <!-- End Footer -->
-                </div>
-    
-                <div id="modalStepTerms" style="display: none;">
-                    <h4>Terms content</h4>
-    
-                    <p>...</p>
-    
-                    <!-- Footer -->
-                    <div class="d-flex align-items-center">
-                    <button type="button" class="btn btn-ghost-secondary mr-2"
-                        data-hs-step-form-prev-options='{
-                        "targetSelector": "#modalStepDetails"
-                        }'>
-                        <i class="tio-chevron-left"></i> Previous step
-                    </button>
-    
-                    <div class="ml-auto">
-                        <button type="button" class="btn btn-primary"
-                                data-hs-step-form-next-options='{
-                                "targetSelector": "#modalStepMembers"
-                                }'>
-                        Next <i class="tio-chevron-right"></i>
-                        </button>
-                    </div>
-                    </div>
-                    <!-- End Footer -->
-                </div>
-    
-                <div id="modalStepMembers" style="display: none;">
-                    <h4>Members content</h4>
-    
-                    <p>...</p>
-    
-                    <!-- Footer -->
-                    <div class="d-sm-flex align-items-center">
-                    <button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 mr-2"
-                        data-hs-step-form-prev-options='{
-                        "targetSelector": "#modalStepTerms"
-                        }'>
-                        <i class="tio-chevron-left"></i> Previous step
-                    </button>
-    
-                    <div class="d-flex justify-content-end ml-auto">
-                        <button type="button" class="btn btn-white mr-2" data-dismiss="modal" aria-label="Close">Cancel</button>
-                        <button id="createProjectFinishBtn" type="button" class="btn btn-primary">Create project</button>
-                    </div>
-                    </div>
-                    <!-- End Footer -->
-                </div>
-                </div>
-                <!-- End Content Step Form -->
-    
-                <!-- Message Body -->
-                <div id="modalStepSuccessMessage" style="display:none;">
-                <div class="text-center">
-                    <img class="img-fluid mb-3" src="../assets/svg/illustrations/create.svg" alt="Image Description" style="max-width: 15rem;">
-    
-                    <div class="mb-4">
-                    <h2>Successful!</h2>
-                    <p>New project has been successfully created.</p>
-                    </div>
-    
-                    <div class="d-flex justify-content-center">
-                    <a class="btn btn-white mr-3" href="#">
-                        <i class="tio-chevron-left ml-1"></i> Back to projects
-                    </a>
-                    <a class="btn btn-primary" href="#">
-                        <i class="tio-city mr-1"></i> Add new project
-                    </a>
-                    </div>
-                </div>
-                </div>
-                <!-- End Message Body -->
-            </form>
-            <!-- End Step Form -->
-            </div>
-            <!-- End Body -->
-    
-            <!-- Footer -->
-            <div class="modal-footer">
-            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Continue</button>
-            </div>
-            <!-- End Footer -->
-        </div>
-        </div>
-    </div>
-    <!-- End Modal -->
+    <div id="footer-container"></div>
 
   <!-- JS Global Compulsory -->
   <script src="js/jquery.min.js"></script>
@@ -775,6 +537,11 @@
 
 
   <script>
+
+    // Charger après l’insertion du header
+    document.addEventListener("DOMContentLoaded", function () {
+        setActiveNavLink();
+    });
 
     //How to use?
     $(document).on('ready', function () {
@@ -813,7 +580,27 @@
         });
     });
 
+    $(document).on('ready', function () {
+    // initialization of unfold
+    $('.js-unfold-invoker').each(function () {
+      var unfold = new HSUnfold($(this)).init();
+    });
+  });
+
   </script>
+  <script>
+        // Fonction pour charger le header et le footer dynamiquement
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data)
+                .catch(error => console.error(`Erreur lors du chargement de ${file}:`, error));
+        }
+
+        // Charger le header et le footer
+        loadComponent("header-container", "pages/header.html");
+        loadComponent("footer-container", "pages/footer.html");
+    </script>
 
 </body>
 </html>

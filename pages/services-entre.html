@@ -15,20 +15,119 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
 
   <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="css/font-awesome/css/fontawesome.min.css">
-  <link rel="stylesheet" href="css/hs-mega-menu.min.css">
-  <link rel="stylesheet" href="css/hs-unfold.min.css">
+  <link rel="stylesheet" href="../assets/css/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/font-awesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="../assets/css/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="../assets/css/hs-unfold.min.css">
 
-  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="../../assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
   <link rel="stylesheet" href="../../assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
 
   <!-- CSS Front Template -->
-  <link rel="stylesheet" href="css/theme.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+  <!-- ========== HEADER ========== -->
+  <div id="header-container"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" 
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog d-flex" style="max-width: 850px;">
+        <div class="modal-content mx-auto" role="document">
+            <div class="modal-header border-b-2">
+            <h5 class="modal-title text-center" id="staticBackdropLabel">Choisir un service pour le devis</h5>
+            <button type="button" class="btn btn-xs btn-icon btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
+                <i class="tio-clear tio-lg"></i>
+            </button>
+            </div>
+            <div class="modal-body py-4">
+                <div class="row mx-n2">
+                    <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                        <!-- Icon Block -->
+                        <a class="card card-frame h-100" href="pages/demenagement.html">
+                            <div class="card-body p-md-3">
+                                <div class="media">
+                                    <figure class="w-100 max-w-6rem mr-3">
+                                        <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                    </figure>
+                                    <div class="media-body">
+                                        <h5>Déménagement</h5>
+                                        <p class="text-body pb-0 small">
+                                            Chat live with community members to get your questions answered.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Icon Block -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                        <!-- Icon Block -->
+                        <a class="card card-frame h-100" href="pages/demolition.html">
+                            <div class="card-body p-md-3">
+                                <div class="media">
+                                    <figure class="w-100 max-w-6rem mr-3">
+                                        <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                    </figure>
+                                    <div class="media-body">
+                                        <h5>Démolition</h5>
+                                        <p class="text-body pb-0 small">
+                                            Chat live with community members to get your questions answered.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Icon Block -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                        <!-- Icon Block -->
+                        <a class="card card-frame h-100" href="pages/Placement.html">
+                            <div class="card-body p-md-3">
+                                <div class="media">
+                                    <figure class="w-100 max-w-6rem mr-3">
+                                        <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                    </figure>
+                                    <div class="media-body">
+                                        <h5>Placement de personnel</h5>
+                                        <p class="text-body pb-0 small">
+                                            Chat live with community members to get your questions answered.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Icon Block -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                        <!-- Icon Block -->
+                        <a class="card card-frame h-100" href="pages/services-entreprises.html">
+                            <div class="card-body p-md-3">
+                                <div class="media">
+                                    <figure class="w-100 max-w-6rem mr-3">
+                                        <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                    </figure>
+                                    <div class="media-body">
+                                        <h5>Services aux entreprises</h5>
+                                        <p class="text-body pb-0 small">
+                                            Chat live with community members to get your questions answered.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Icon Block -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer py-2">
+            <button type="button" class="btn btn-sm btn-white" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+  <!-- ========== END HEADER ========== -->
   
   <!-- ========== MAIN ========== -->
   <main id="content" role="main">
@@ -240,32 +339,34 @@
   </main>
   <!-- ========== END MAIN ========== -->
 
+  <!-- ========== FOOTER ========== -->
+  <div id="footer-container"></div>
+  <!-- ========== END FOOTER ========== -->
 
   <!-- JS Global Compulsory -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery-migrate.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
 
   <!-- JS Implementing Plugins -->
-  <script src="js/hs-header.min.js"></script>
-  <script src="js/hs-unfold.min.js"></script>
-  <script src="js/hs-mega-menu.min.js"></script>
-  <script src="js/typed.min.js"></script>
-  <script src="js/hs-step-form.min.js"></script>
+  <script src="../assets/js/hs-header.min.js"></script>
+  <script src="../assets/js/hs-unfold.min.js"></script>
+  <script src="../assets/js/hs-mega-menu.min.js"></script>
+  <script src="../assets/js/typed.min.js"></script>
+  <script src="../assets/js/hs-step-form.min.js"></script>
 
 
-  <script src="../../assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  
   <script src="../../assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
-  <script src="../../assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
-  <script src="../../assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  
   <script src="../../assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
   <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
   <script src="../../assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
   <script src="../../assets/vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
 
   <!-- JS Front -->
-  <script src="js/hs.core.js"></script>
-  <script src="js/script.js"></script>
+  <script src="../assets/js/hs.core.js"></script>
+  <script src="../assets/js/script.js"></script>
 
   <script src="../../assets/js/hs.validation.js"></script>
   <script src="../../assets/js/hs.cubeportfolio.js"></script>

@@ -15,3 +15,10 @@
 .text-med {
   font-size: 0.95rem;
 }
+.serciveshov{
+  color: #677788;
+}
+.dropservice:hover{
+  background-color: #377dff;
+  color: #fff;
+}

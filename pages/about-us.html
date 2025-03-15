@@ -15,10 +15,10 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
 
   <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="css/font-awesome/css/fontawesome.min.css">
-  <link rel="stylesheet" href="css/hs-mega-menu.min.css">
-  <link rel="stylesheet" href="css/hs-unfold.min.css">
+  <link rel="stylesheet" href="../css/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="../css/font-awesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="../css/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="../css/hs-unfold.min.css">
 
 
 
@@ -26,14 +26,113 @@
   <link rel="stylesheet" href="../../assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
 
   <!-- CSS Front Template -->
-  <link rel="stylesheet" href="css/theme.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="stylesheet" href="../css/style.css">
 
-
-  <link rel="stylesheet" href="../../assets/css/theme.css">
 </head>
 <body>
 
+  <!-- ========== HEADER ========== -->
+  <div id="header-container"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" 
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog d-flex" style="max-width: 850px;">
+        <div class="modal-content mx-auto" role="document">
+            <div class="modal-header border-b-2">
+            <h5 class="modal-title text-center" id="staticBackdropLabel">Choisir un service pour le devis</h5>
+            <button type="button" class="btn btn-xs btn-icon btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
+                <i class="tio-clear tio-lg"></i>
+            </button>
+            </div>
+            <div class="modal-body py-4">
+                <div class="row mx-n2">
+                    <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                        <!-- Icon Block -->
+                        <a class="card card-frame h-100" href="pages/demenagement.html">
+                            <div class="card-body p-md-3">
+                                <div class="media">
+                                    <figure class="w-100 max-w-6rem mr-3">
+                                        <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                    </figure>
+                                    <div class="media-body">
+                                        <h5>Déménagement</h5>
+                                        <p class="text-body pb-0 small">
+                                            Chat live with community members to get your questions answered.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Icon Block -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                        <!-- Icon Block -->
+                        <a class="card card-frame h-100" href="pages/demolition.html">
+                            <div class="card-body p-md-3">
+                                <div class="media">
+                                    <figure class="w-100 max-w-6rem mr-3">
+                                        <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                    </figure>
+                                    <div class="media-body">
+                                        <h5>Démolition</h5>
+                                        <p class="text-body pb-0 small">
+                                            Chat live with community members to get your questions answered.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Icon Block -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                        <!-- Icon Block -->
+                        <a class="card card-frame h-100" href="pages/Placement.html">
+                            <div class="card-body p-md-3">
+                                <div class="media">
+                                    <figure class="w-100 max-w-6rem mr-3">
+                                        <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                    </figure>
+                                    <div class="media-body">
+                                        <h5>Placement de personnel</h5>
+                                        <p class="text-body pb-0 small">
+                                            Chat live with community members to get your questions answered.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Icon Block -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 px-2 mb-3 ">
+                        <!-- Icon Block -->
+                        <a class="card card-frame h-100" href="pages/services-entreprises.html">
+                            <div class="card-body p-md-3">
+                                <div class="media">
+                                    <figure class="w-100 max-w-6rem mr-3">
+                                        <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
+                                    </figure>
+                                    <div class="media-body">
+                                        <h5>Services aux entreprises</h5>
+                                        <p class="text-body pb-0 small">
+                                            Chat live with community members to get your questions answered.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Icon Block -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer py-2">
+            <button type="button" class="btn btn-sm btn-white" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+  <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN ========== -->
   <main id="content" role="main">
@@ -54,25 +153,25 @@
       <!-- Gallery Section -->
       <div class="row mx-n2">
         <div class="col-6 col-md px-2 mb-3">
-          <div class="h-250rem bg-img-hero" style="background-image: url(images/img17.jpg);"></div>
+          <div class="h-250rem bg-img-hero" style="background-image: url(../assets/);"></div>
         </div>
         <div class="col-md-3 d-none d-md-block px-2 mb-3">
-          <div class="h-250rem bg-img-hero" style="background-image: url(images/img6.jpg);"></div>
+          <div class="h-250rem bg-img-hero" style="background-image: url(../assets/images/img6.jpg);"></div>
         </div>
         <div class="col-6 col-md px-2 mb-3">
-          <div class="h-250rem bg-img-hero" style="background-image: url(images/img1.jpg);"></div>
+          <div class="h-250rem bg-img-hero" style="background-image: url(../assets/images/img1.jpg);"></div>
         </div>
 
         <div class="w-100"></div>
 
         <div class="col-6 col-md px-2 mb-3 mb-md-0">
-          <div class="h-250rem bg-img-hero" style="background-image: url(images/img4.jpg);"></div>
+          <div class="h-250rem bg-img-hero" style="background-image: url(../assets/images/img4.jpg);"></div>
         </div>
         <div class="col-md-4 d-none d-md-block px-2 mb-3 mb-md-0">
-          <div class="h-250rem bg-img-hero" style="background-image: url(images/img3.jpg);"></div>
+          <div class="h-250rem bg-img-hero" style="background-image: url(../assets/images/img3.jpg);"></div>
         </div>
         <div class="col-6 col-md px-2">
-          <div class="h-250rem bg-img-hero" style="background-image: url(images/img5.jpg);"></div>
+          <div class="h-250rem bg-img-hero" style="background-image: url(../assets/images/img5.jpg);"></div>
         </div>
       </div>
       <!-- End Gallery Section -->
@@ -128,26 +227,22 @@
         </div>
         <div class="col-lg-6">
           <p>
-            Batio Développement Inc. est une entreprise québécoise spécialisée dans les services aux entreprises 
-            et aux particuliers. Fondée avec la volonté d'offrir des solutions adaptées et efficaces, nous avons 
-            bâti une réputation solide grâce à notre professionnalisme et notre engagement envers la satisfaction client.
-            Notre expertise s’étend sur plusieurs secteurs : déménagement, démolition, placement de personnel et 
-            services aux entreprises. Nous accompagnons nos clients à chaque étape de leur projet, en garantissant 
-            un service rapide, fiable et sécurisé.
+            Batio Développement Inc. est une entreprise québécoise spécialisée dans les services 
+            aux entreprises et aux particuliers. Nous offrons des solutions adaptées en déménagement, 
+            démolition, placement de personnel et services administratifs, avec un engagement fort 
+            envers la qualité et l’efficacité.
           </p>
           <p>
-            Nous nous distinguons par notre approche personnalisée et notre capacité à répondre aux besoins spécifiques 
-            de chaque client. Que vous soyez un particulier en quête d’un déménagement sans stress, une entreprise 
-            nécessitant du personnel qualifié, ou un professionnel souhaitant externaliser certaines tâches, nous 
-            avons la solution qu’il vous faut.
+            Grâce à une équipe expérimentée et des équipements modernes, nous accompagnons nos clients
+             à chaque étape de leur projet en garantissant un service fiable, sécurisé et conforme aux 
+             normes en vigueur. Notre approche personnalisée nous permet de répondre aux besoins spécifiques 
+             de chaque client, qu’il s’agisse d’un particulier ou d’une entreprise.
           </p>
           <p>
-            Grâce à notre équipe expérimentée et à nos équipements modernes, nous assurons des prestations de haute qualité 
-            tout en respectant les délais et les exigences réglementaires.
-            Batio Développement Inc. est une entreprise québécoise dynamique qui accompagne particuliers et professionnels 
-            dans leurs projets de déménagement, de démolition et de gestion de ressources humaines. Notre mission est d'offrir 
-            des services fiables et efficaces, en mettant à votre disposition une équipe qualifiée et des solutions adaptées 
-            à vos besoins.
+            Notre mission est d’apporter des solutions pratiques et performantes, en mettant l’accent sur 
+            la satisfaction client et l’innovation. Avec une expertise reconnue et une attention particulière 
+            aux détails, nous nous engageons à simplifier vos projets en assurant des prestations rapides et 
+            efficaces.
           </p>
         </div>
       </div>
@@ -176,7 +271,7 @@
           <!-- Icon Blocks -->
           <div class="media pr-lg-5">
             <figure class="w-100 max-w-8rem mr-4">
-              <img class="img-fluid" src="svg/icon-26.svg" alt="Qualité">
+              <img class="img-fluid" src="../assets/svg/icon-26.svg" alt="Qualité">
             </figure>
             <div class="media-body">
               <h4>Qualité </h4>
@@ -190,7 +285,7 @@
           <!-- Icon Blocks -->
           <div class="media pl-lg-5">
             <figure class="w-100 max-w-8rem mr-4">
-              <img class="img-fluid" src="svg/icon-20.svg" alt="Sécurité">
+              <img class="img-fluid" src="../assets/svg/icon-20.svg" alt="Sécurité">
             </figure>
             <div class="media-body">
               <h4>Sécurité  </h4>
@@ -206,7 +301,7 @@
           <!-- Icon Blocks -->
           <div class="media pr-lg-5">
             <figure class="w-100 max-w-8rem mr-4">
-              <img class="img-fluid" src="svg/icon-3.svg" alt="Innovation">
+              <img class="img-fluid" src="../assets/svg/icon-3.svg" alt="Innovation">
             </figure>
             <div class="media-body">
               <h4>Innovation </h4>
@@ -220,7 +315,7 @@
           <!-- Icon Blocks -->
           <div class="media pl-lg-5">
             <figure class="w-100 max-w-8rem mr-4">
-              <img class="img-fluid" src="svg/icon-21.svg" alt="Satisfaction">
+              <img class="img-fluid" src="../assets/svg/icon-21.svg" alt="Satisfaction">
             </figure>
             <div class="media-body">
               <h4>Satisfaction client</h4>
@@ -295,9 +390,9 @@
 
 
   <!-- JS Global Compulsory -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery-migrate.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
 
   <!-- JS Implementing Plugins -->
   <script src="../../assets/vendor/hs-header/dist/hs-header.min.js"></script>
@@ -308,14 +403,19 @@
   <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
 
   <!-- JS Front -->
-  <script src="js/hs.core.js"></script>
-  <script src="js/script.js"></script>
+  <script src="../assets/js/hs.core.js"></script>
+  <script src="../assets/js/script.js"></script>
 
   <script src="../../assets/js/hs.core.js"></script>
   <script src="../../assets/js/hs.validation.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
+    // Charger après l’insertion du header
+    document.addEventListener("DOMContentLoaded", function () {
+        setActiveNavLink();
+    });
+
     $(document).on('ready', function () {
       // initialization of header
       var header = new HSHeader($('#header')).init();
@@ -356,6 +456,19 @@
   <!-- IE Support -->
   <script>
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../../assets/vendor/polifills.js"><\/script>');
+  </script>
+  <script>
+    // Fonction pour charger le header et le footer dynamiquement
+    function loadComponent(id, file) {
+        fetch(file)
+            .then(response => response.text())
+            .then(data => document.getElementById(id).innerHTML = data)
+            .catch(error => console.error(`Erreur lors du chargement de ${file}:`, error));
+    }
+
+    // Charger le header et le footer
+    loadComponent("header-container", "header.html");
+    loadComponent("footer-container", "footer.html");
   </script>
 </body>
 </html>
