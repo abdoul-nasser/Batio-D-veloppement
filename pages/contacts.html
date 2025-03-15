@@ -19,11 +19,7 @@
   <link rel="stylesheet" href="../assets/css/font-awesome/css/fontawesome.min.css">
   <link rel="stylesheet" href="../assets/css/hs-mega-menu.min.css">
   <link rel="stylesheet" href="../assets/css/hs-unfold.min.css">
-
-
-  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="../../assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
-  <link rel="stylesheet" href="../../assets/vendor/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="../assets/css/cubeportfolio.min.css">
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="../assets/css/theme.css">
@@ -335,7 +331,7 @@
   </main>
   <!-- ========== END MAIN ========== -->
 
- 
+  <div id="footer-container"></div>
 
   <!-- JS Global Compulsory -->
   <script src="../assets/js/jquery.min.js"></script>
@@ -369,6 +365,11 @@
 
   <!-- JS Plugins Init. -->
   <script>
+    // Charger après l’insertion du header
+    document.addEventListener("DOMContentLoaded", function () {
+        setActiveNavLink();
+    });
+
     $(document).on('ready', function () {
       // initialization of header
       var header = new HSHeader($('#header')).init();
@@ -414,7 +415,7 @@
 
   <!-- IE Support -->
   <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="js/polifills.js"><\/script>');
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/js/polifills.js"><\/script>');
   </script>
 
 <script>
@@ -443,6 +444,19 @@
     });
   });
 
+</script>
+<script>
+  // Fonction pour charger le header et le footer dynamiquement
+  function loadComponent(id, file) {
+      fetch(file)
+          .then(response => response.text())
+          .then(data => document.getElementById(id).innerHTML = data)
+          .catch(error => console.error(`Erreur lors du chargement de ${file}:`, error));
+  }
+
+  // Charger le header et le footer
+  loadComponent("header-container", "header.html");
+  loadComponent("footer-container", "footer.html");
 </script>
 
 </body>
