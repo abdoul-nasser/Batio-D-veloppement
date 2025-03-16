@@ -459,17 +459,20 @@
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/polifills.js"><\/script>');
   </script>
   <script>
-    // Fonction pour charger le header et le footer dynamiquement
-    function loadComponent(id, file) {
-        fetch(file)
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("header.html")
             .then(response => response.text())
-            .then(data => document.getElementById(id).innerHTML = data)
-            .catch(error => console.error(`Erreur lors du chargement de ${file}:`, error));
-    }
+            .then(data => {
+                document.body.insertAdjacentHTML("afterbegin", data);
+            });
 
-    // Charger le header et le footer
-    loadComponent("header-container", "header.html");
-    loadComponent("footer-container", "footer.html");
-  </script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML("beforeend", data);
+            });
+    });
+</script>
+
 </body>
 </html>

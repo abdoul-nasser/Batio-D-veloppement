@@ -496,18 +496,21 @@
 
   </script>
   <script>
-        // Fonction pour charger le header et le footer dynamiquement
-        function loadComponent(id, file) {
-            fetch(file)
-                .then(response => response.text())
-                .then(data => document.getElementById(id).innerHTML = data)
-                .catch(error => console.error(`Erreur lors du chargement de ${file}:`, error));
-        }
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("pages/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML("afterbegin", data);
+            });
 
-        // Charger le header et le footer
-        loadComponent("header-container", "pages/header.html");
-        loadComponent("footer-container", "pages/footer.html");
-    </script>
+        fetch("pages/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML("beforeend", data);
+            });
+    });
+</script>
+
 
 </body>
 </html>
