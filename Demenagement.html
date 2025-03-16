@@ -129,18 +129,17 @@
                 Nous vous proposons des services de déménagement résidentiel et commercial. Notre 
                 équipe qualifiée prend en charge l'emballage, le transport et l'installation de vos biens avec le plus grand soin.
               </p>
-              <a  type="button" data-toggle="modal" data-target=".Demenagement"
-                class="btn btn-sm btn-primary mx-auto py-2 px-5 transition-3d-hover"  href="#">
+              <a  type="button"class="btn btn-sm btn-primary mx-auto py-2 px-5 transition-3d-hover"  href="contacts.html">
                   Devis
               </a>
             </div>
 
-            <!-- Modal -->
+            <!-- Modal 
           <div class="modal fade Demenagement" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-lg" role="document" style="max-width: 800px;">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title h4 d-flex" id="myLargeModalLabel">Choisissez un service pour votre demande de devis</h5>
+                        <h5 class="modal-title h4 d-flex" id="myLargeModalLabel">Type de déménagement</h5>
                         <button type="button" class="btn btn-xs bg-light btn-icon btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
                             <i class="tio-clear tio-lg"></i>
                         </button>
@@ -149,51 +148,104 @@
                       <form id="contactDemenag" class="js-validate">
                         <div class="row mx-n2">
                             <div class="col-sm-6">
-                              <!-- Form Group -->
-                              <div class="js-form-message form-group">
-                                <label for="firstName lib-contactDemenag" class="input-label">First name</label>
-                                <input type="text" class="form-control size-input" name="firstName" id="firstName" 
-                                  placeholder="Nataly" aria-label="Nataly" required
-                                  data-msg="Please enter first your name">
+                              <div class="js-form-message form-group mb-3">
+                                <label for="name lib-contactDemenag" class="input-label">Name</label>
+                                <input type="text" class="form-control size-input" name="name" id="name" 
+                                  placeholder="Nataly Doe" aria-label="Nataly Doe" required
+                                  data-msg="Please enter your name">
                               </div>
-                              <!-- End Form Group -->
                             </div>
 
                             <div class="col-sm-6">
-                              <!-- Form Group -->
-                              <div class="js-form-message form-group">
-                                <label for="lastName lib-contactDemenag" class="input-label">Last name</label>
-                                <input type="text" class="form-control size-input" name="lastName" id="lastName" 
-                                  placeholder="Gaga" aria-label="Gaga" required
-                                      data-msg="Please enter last your name">
-                              </div>
-                              <!-- End Form Group -->
-                            </div>
-
-                            <div class="col-sm-12">
-                              <!-- Form Group -->
-                              <div class="js-form-message form-group">
+                              <div class="js-form-message form-group mb-3">
                                 <label for="emailAddress lib-contactDemenag" class="input-label">Email address</label>
                                 <input type="email" class="form-control size-input" name="emailAddress" id="emailAddress" 
                                   placeholder="jondoe@gexempl.com" aria-label="jondoe@gexempl.com" required
                                       data-msg="Please enter a valid email address">
                               </div>
-                              <!-- End Form Group -->
                             </div>
 
-                            <div class="col-sm-12">
-                              <!-- Form Group -->
-                              <div class="js-form-message form-group">
+                            <div class="col-sm-6">
+                              <div class="js-form-message form-group mb-3">
                                 <label for="phoneNumber lib-contactDemenag" class="input-label">phone </label>
                                 <input type="phone" class="form-control size-input" name="phoneNumber" id="phoneNumber" 
                                   placeholder="+1 (062) 109-9222" data-msg="Please enter a valid phone number">
                               </div>
-                              <!-- End Form Group -->
+                            </div>
+
+                            <div class="col-sm-6">
+                              <div class="js-form-message form-group mb-3">
+                                <label for="type_demenagement lib-contactDemenag" class="input-label">Type déménagement</label>
+                                <select class="form-control custom-select size-input py-0 text-secondary" name="type_demenagement" id="type_demenagement" placeholder="type demenagement"
+                                  aria-label="type demenagement" required data-msg="type demenagement">
+                                    <option class="text-secondary" value="residence">Résidentiel</option>
+                                    <option class="text-secondary" value="residence">Commercial</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <div class="js-form-message form-group mb-3">
+                                <label for="adresse_depart lib-contactDemenag" class="input-label">Adresse de départ</label>
+                                <input type="text" class="form-control size-input" name="adresse_depart" id="adresse_depart" 
+                                  placeholder="10F rue Marc-Antoine" aria-label="10F rue Marc-Antoine" required
+                                  data-msg="Adresse de départ">
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <div class="js-form-message form-group mb-3">
+                                <label for="adresse_arrivee lib-contactDemenag" class="input-label">Adresse d’arrivée</label>
+                                <input type="text" class="form-control size-input" name="adresse_arrivee" id="adresse_arrivee" 
+                                  placeholder="10F rue Marc-Antoine" aria-label="10F rue Marc-Antoine" required
+                                  data-msg="Adresse d’arrivée">
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <div class="js-form-message form-group mb-3">
+                                <label for="date_demenagement lib-contactDemenag" class="input-label">Date souhaitée</label>
+                                <input type="date" class="form-control size-input" name="date_demenagement" id="date_demenagement" 
+                                  placeholder="Nataly Doe" aria-label="Nataly Doe" required
+                                  data-msg="Please enter your name">
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <div class="js-form-message form-group mb-3">
+                                <label for="volume lib-contactDemenag" class="input-label">Volume approximatif </label>
+                                <input type="text" class="form-control size-input" name="volume" id="volume" 
+                                  placeholder="Ex: 50m³" aria-label="Ex: 50m³" required
+                                  data-msg="Volume approximatif">
+                              </div>
                             </div>
 
                             <div class="col-sm-12">
-                              <!-- Form Group -->
-                              <div class="js-form-message form-group">
+                              <div class="js-form-message form-group mb-3">
+                                <label for="services_additionnels lib-contactDemenag" class="input-label">Services supplémentaires</label>
+                                <div class="form-check form-check-inline mb-2">
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" name="services[]" id="emballage" class="form-control custom-control-input">
+                                    <label class="custom-control-label" for="emballage">Emballage et protection</label>
+                                  </div>
+                                </div>
+                                <div class="form-check form-check-inline mb-2">
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" name="services[]" id="montage" class="form-control custom-control-input">
+                                    <label class="custom-control-label" for="montage">Montage/Démontage</label>
+                                  </div>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" name="services[]" id="garde" class="form-control custom-control-input">
+                                    <label class="custom-control-label" for="garde">Garde-meubles </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                              <div class="js-form-message form-group mb-3">
                                 <label for="message lib-contactDemenag" class="input-label">Message</label>
                                 <div class="input-group">
                                   <textarea class="form-control" rows="4" name="message" id="message" placeholder="Hi there, I would like to ..." 
@@ -202,9 +254,8 @@
                                   </textarea>
                                 </div>
                               </div>
-                              <!-- End Form Group -->
                             </div>
-                            <div class="col-12 text-center mb-4">
+                            <div class="col-12 text-center mb-2">
                               <button type="submit" class="btn w-50 py-2 btn-primary transition-3d-hover">Submit</button>
                             </div>
                         </div>
@@ -213,7 +264,7 @@
                 </div>
             </div>
           </div>
-          <!-- End Modal -->
+           End Modal -->
 
             <hr class="my-5">
 
@@ -322,8 +373,9 @@
   <script src="assets/js/jquery-migrate.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   
-  <!-- Importation de EmailJS -->
+  <!-- Importation de EmailJS 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  -->
 
   <!-- JS Implementing Plugins -->
   <script src="assets/js/hs-header.min.js"></script>
@@ -356,11 +408,6 @@
           position: 'left'
         }
       }).init();
-
-      //Importation de EmailJS
-      (function(){
-        emailjs.init("OKrvm6duLRwNww8Sa");
-      })();
 
       // initialization of unfold
       var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
@@ -407,33 +454,6 @@
   <script>
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/js/polifills.js"><\/script>');
   </script>
-  <script>
-    document.getElementById('contactDemenag').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    emailjs.send("service_fgqzjjv", "template_un7sdgd", {
-        first_name: document.getElementById('firstName').value,
-        last_name: document.getElementById('lastName').value,
-        email: document.getElementById('emailAddress').value,
-        phone: document.getElementById('phoneNumber').value,
-        message: document.getElementById('message').value
-    }).then(function(response) {
-        let resultElement = document.getElementById('result');
-        if (resultElement) {
-            resultElement.innerText = "Message envoyé avec succès!";
-        }
-        console.log("Email envoyé:", response);
-        document.getElementById('contactDemenag').reset();
-    }, function(error) {
-        let resultElement = document.getElementById('result');
-        if (resultElement) {
-            resultElement.innerText = "Erreur lors de l'envoi.";
-        }
-        console.log("Erreur:", error);
-    });
-  });
-
-</script>
   <script>
     // Fonction pour charger le header et le footer dynamiquement
     function loadComponent(id, file) {
