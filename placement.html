@@ -33,6 +33,7 @@
 <body>
   <!-- ========== HEADER ========== -->
   <div id="header-container"></div>
+    <!-- End Modal -->
   <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN ========== -->
@@ -54,7 +55,7 @@
             <!-- Item -->
             <div class="cbp-item">
               <div class="cbp-caption">
-                <img class="rounded" src="assets/img/900x900/img11.jpg" alt="Image Description">
+                <img class="rounded" src="assets/images/placement/img11.png" alt="Image Description">
               </div>
             </div>
             <!-- End Item -->
@@ -62,7 +63,7 @@
             <!-- Item -->
             <div class="cbp-item">
               <div class="cbp-caption">
-                <img class="rounded" src="assets/img/600x400/img1.jpg" alt="Image Description">
+                <img class="rounded" src="assets/images/placement/img1.png" alt="Image Description">
               </div>
             </div>
             <!-- End Item -->
@@ -70,7 +71,7 @@
             <!-- Item -->
             <div class="cbp-item">
               <div class="cbp-caption">
-                <img class="rounded" src="assets/img/900x900/img12.jpg" alt="Image Description">
+                <img class="rounded" src="assets/images/placement/img12.png" alt="Image Description">
               </div>
             </div>
             <!-- End Item -->
@@ -78,7 +79,7 @@
             <!-- Item -->
             <div class="cbp-item">
               <div class="cbp-caption">
-                <img class="rounded" src="assets/img/900x900/img14.jpg" alt="Image Description">
+                <img class="rounded" src="assets/images/placement/img14.png" alt="Image Description">
               </div>
             </div>
             <!-- End Item -->
@@ -86,7 +87,7 @@
             <!-- Item -->
             <div class="cbp-item">
               <div class="cbp-caption">
-                <img class="rounded" src="assets/img/900x900/img15.jpg" alt="Image Description">
+                <img class="rounded" src="assets/images/placement/img15.png" alt="Image Description">
               </div>
             </div>
             <!-- End Item -->
@@ -94,7 +95,7 @@
             <!-- Item -->
             <div class="cbp-item">
               <div class="cbp-caption">
-                <img class="rounded" src="assets/img/400x600/img1.jpg" alt="Image Description">
+                <img class="rounded" src="assets/images/placement/img18.png" alt="Image Description">
               </div>
             </div>
             <!-- End Item -->
@@ -102,7 +103,7 @@
             <!-- Item -->
             <div class="cbp-item">
               <div class="cbp-caption">
-                <img class="rounded" src="assets/img/600x435/img1.jpg" alt="Image Description">
+                <img class="rounded" src="assets/images/placement/img8.png" alt="Image Description">
               </div>
             </div>
             <!-- End Item -->
@@ -122,70 +123,149 @@
                  "stickyOffsetBottom": 130
                }'>
             <div class="mb-6">
-              <h1 class="h2">Dose juice</h1>
-              <p>Organic cold-pressed juices, smoothies and plant-based lattes delivered to your door. Made with cashews or almonds, all our new products contain no additives, no preservatives and, obviously, no lactose nor soy.</p>
-              <p>They contain 5 X more nuts and 5 X more proteins than the other nutmilks. They taste delicious and have a creamy texture like the ones you are making at home.</p>
+              <h1 class="h2 text-primary">Déménagement</h1>
+              <p style="line-height: 1.6;">
+                <span class="font-weight-bold">Un déménagement sans stress et en toute sécurité !</span></br>
+                Nous vous proposons des services de déménagement résidentiel et commercial. Notre 
+                équipe qualifiée prend en charge l'emballage, le transport et l'installation de vos biens avec le plus grand soin.
+              </p>
+              <a  type="button" data-toggle="modal" data-target=".Placement"
+                class="btn btn-sm btn-primary mx-auto py-2 px-5 transition-3d-hover"  href="#">
+                  Devis
+              </a>
             </div>
+
+            <!-- Modal -->
+          <div class="modal fade Placement" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title h4 d-flex" id="myLargeModalLabel">Choisissez un service pour votre demande de devis</h5>
+                        <button type="button" class="btn btn-xs bg-light btn-icon btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
+                            <i class="tio-clear tio-lg"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body py-4">
+                      <form id="contactPlacement" class="js-validate">
+                        <div class="row mx-n2">
+                            <div class="col-sm-6">
+                              <!-- Form Group -->
+                              <div class="js-form-message form-group">
+                                <label for="firstName lib-contactPlacement" class="input-label">First name</label>
+                                <input type="text" class="form-control size-input" name="firstName" id="firstName" 
+                                  placeholder="Nataly" aria-label="Nataly" required
+                                  data-msg="Please enter first your name">
+                              </div>
+                              <!-- End Form Group -->
+                            </div>
+
+                            <div class="col-sm-6">
+                              <!-- Form Group -->
+                              <div class="js-form-message form-group">
+                                <label for="lastName lib-contactPlacement" class="input-label">Last name</label>
+                                <input type="text" class="form-control size-input" name="lastName" id="lastName" 
+                                  placeholder="Gaga" aria-label="Gaga" required
+                                      data-msg="Please enter last your name">
+                              </div>
+                              <!-- End Form Group -->
+                            </div>
+
+                            <div class="col-sm-12">
+                              <!-- Form Group -->
+                              <div class="js-form-message form-group">
+                                <label for="emailAddress lib-contactPlacement" class="input-label">Email address</label>
+                                <input type="email" class="form-control size-input" name="emailAddress" id="emailAddress" 
+                                  placeholder="jondoe@gexempl.com" aria-label="jondoe@gexempl.com" required
+                                      data-msg="Please enter a valid email address">
+                              </div>
+                              <!-- End Form Group -->
+                            </div>
+
+                            <div class="col-sm-12">
+                              <!-- Form Group -->
+                              <div class="js-form-message form-group">
+                                <label for="phoneNumber lib-contactPlacement" class="input-label">phone </label>
+                                <input type="phone" class="form-control size-input" name="phoneNumber" id="phoneNumber" 
+                                  placeholder="+1 (062) 109-9222" data-msg="Please enter a valid phone number">
+                              </div>
+                              <!-- End Form Group -->
+                            </div>
+
+                            <div class="col-sm-12">
+                              <!-- Form Group -->
+                              <div class="js-form-message form-group">
+                                <label for="message lib-contactPlacement" class="input-label">Message</label>
+                                <div class="input-group">
+                                  <textarea class="form-control" rows="4" name="message" id="message" placeholder="Hi there, I would like to ..." 
+                                    aria-label="Hi there, I would like to ..." required
+                                    data-msg="Please enter a reason.">
+                                  </textarea>
+                                </div>
+                              </div>
+                              <!-- End Form Group -->
+                            </div>
+                            <div class="col-12 text-center mb-4">
+                              <button type="submit" class="btn w-50 py-2 btn-primary transition-3d-hover">Submit</button>
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- End Modal -->
 
             <hr class="my-5">
 
             <!-- List -->
             <ul class="list-unstyled mb-0">
-              <li class="media mb-1">
-                <div class="d-flex w-40 w-sm-30">
-                  <h2 class="h4">Client</h2>
-                </div>
+              <!-- List -->
+              <div class="">
+                <h2 class="h4 mb-3"> Nos prestations : </h2>
                 <div class="media-body">
-                  <small class="text-muted">
-                    Htmlstream
-                  </small>
+                  <ul>
+                    <li class="text-muted small lines">
+                      Emballage et protection des meubles avec du matériel de qualité.
+                    </li>
+                    <li class="text-muted small lines">
+                      Transport sécurisé avec des véhicules adaptés.
+                    </li>
+                    <li class="text-muted small lines">
+                      Montage et démontage des meubles pour un gain de temps.
+                    </li>
+                    <li class="text-muted small lines">
+                      Service de garde-meubles sécurisé et flexible.
+                    </li>
+                    <li class="text-muted small lines">
+                      Gestion des autorisations et stationnements pour le déménagement.
+                    </li>
+                  </ul>
                 </div>
-              </li>
+              </div>
+            </ul>
+            <!-- End List -->
 
-              <li class="media mb-1">
-                <div class="d-flex w-40 w-sm-30">
-                  <h3 class="h4">Designers</h3>
-                </div>
-                <div class="media-body">
-                  <small class="text-muted">
-                    Christina Kray,
-                  </small>
-                  <small class="text-muted">
-                    Jeff Fisher
-                  </small>
-                </div>
-              </li>
+            <hr class="my-5">
 
-              <li class="media mb-1">
-                <div class="d-flex w-40 w-sm-30">
-                  <h4>Partners</h4>
-                </div>
+            <!-- List -->
+            <ul class="list-unstyled mb-0">
+              <!-- List -->
+              <div class="">
+                <h2 class="h4 mb-3"> Pourquoi nous choisir ? </h2>
                 <div class="media-body">
-                  <small class="text-muted">
-                    Pixeel
-                  </small>
+                  <ul>
+                    <li class="text-muted small lines">
+                      Une équipe expérimentée et ponctuelle.
+                    </li>
+                    <li class="text-muted small lines">
+                      Des assurances pour protéger vos biens.
+                    </li>
+                    <li class="text-muted small lines">
+                      Un devis transparent sans frais cachés
+                    </li>
+                  </ul>
                 </div>
-              </li>
-
-              <li class="media">
-                <div class="d-flex w-40 w-sm-30">
-                  <h4>Awards</h4>
-                </div>
-                <div class="media-body">
-                  <small class="d-block text-muted mb-1">
-                    FWA Site of the Day
-                  </small>
-                  <small class="d-block text-muted mb-1">
-                    Awwwards Site of the Day
-                  </small>
-                  <small class="d-block text-muted mb-1">
-                    CSSAwards Site of the Day
-                  </small>
-                  <small class="d-block text-muted">
-                    Bronze ADCN Lamp (Digital Craft)
-                  </small>
-                </div>
-              </li>
+              </div>
             </ul>
             <!-- End List -->
 
@@ -206,17 +286,12 @@
                   </li>
                   <li class="list-inline-item">
                     <a class="btn btn-xs btn-icon btn-soft-secondary" href="#">
-                      <i class="fab fa-google"></i>
+                      <i class="fab fa-linkedin"></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
                     <a class="btn btn-xs btn-icon btn-soft-secondary" href="#">
                       <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn btn-xs btn-icon btn-soft-secondary" href="#">
-                      <i class="fab fa-github"></i>
                     </a>
                   </li>
                 </ul>
@@ -235,79 +310,6 @@
 
     <hr class="my-0">
 
-    <!-- Portfolio Section -->
-    <div class="container space-2 space-lg-3">
-      <!-- Title -->
-      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-        <h2>Our branding works</h2>
-        <p>Experience a level of our quality in both design &amp; customization works.</p>
-      </div>
-      <!-- End Title -->
-
-      <div class="cbp"
-           data-hs-cbp-options='{
-             "animationType": "fadeOut",
-             "caption": "zoom",
-             "gapHorizontal": 40,
-             "gapVertical": 40,
-             "mediaQueries": [
-               {"width": 1500, "cols": 3},
-               {"width": 1100, "cols": 3},
-               {"width": 800, "cols": 3},
-               {"width": 480, "cols": 2},
-               {"width": 380, "cols": 1}
-             ]
-           }'>
-        <!-- Item -->
-        <div class="cbp-item product">
-          <a class="cbp-caption" href="portfolio/single-page-grid.html">
-            <div class="overflow-hidden rounded">
-              <div class="cbp-caption-defaultWrap">
-                <img class="rounded" src="assets/img/480x320/img2.jpg" alt="Image Description">
-              </div>
-            </div>
-            <div class="p-4">
-              <span class="d-block small text-body font-weight-bold text-cap">Product</span>
-              <span class="d-block h3 mb-0">Canva Schedule</span>
-            </div>
-          </a>
-        </div>
-        <!-- End Item -->
-
-        <!-- Item -->
-        <div class="cbp-item branding">
-          <a class="cbp-caption" href="portfolio/single-page-grid.html">
-            <div class="overflow-hidden rounded">
-              <div class="cbp-caption-defaultWrap">
-                <img class="rounded" src="assets/img/480x320/img5.jpg" alt="Image Description">
-              </div>
-            </div>
-            <div class="p-4">
-              <span class="d-block small text-body font-weight-bold text-cap">Product</span>
-              <span class="d-block h3 mb-0">Electro bike</span>
-            </div>
-          </a>
-        </div>
-        <!-- End Item -->
-
-        <!-- Item -->
-        <div class="cbp-item product branding">
-          <a class="cbp-caption" href="portfolio/single-page-grid.html">
-            <div class="overflow-hidden rounded">
-              <div class="cbp-caption-defaultWrap">
-                <img class="rounded" src="assets/img/480x320/img1.jpg" alt="Image Description">
-              </div>
-            </div>
-            <div class="p-4">
-              <span class="d-block small text-body font-weight-bold text-cap">Branding</span>
-              <span class="d-block h3 mb-0">Larq</span>
-            </div>
-          </a>
-        </div>
-        <!-- End Item -->
-      </div>
-    </div>
-    <!-- End Portfolio Section -->
   </main>
   <!-- ========== END MAIN ========== -->
 
@@ -315,276 +317,26 @@
   <div id="footer-container"></div>
   <!-- ========== END FOOTER ========== -->
 
-  <!-- ========== SECONDARY CONTENTS ========== -->
-  <!-- Account Sidebar Navigation -->
-  <aside id="sidebarContent" class="hs-unfold-content sidebar">
-    <div class="sidebar-scroller">
-      <div class="sidebar-container">
-        <div class="sidebar-footer-offset" style="padding-bottom: 7rem;">
-          <!-- Toggle Button -->
-          <div class="d-flex justify-content-end align-items-center pt-4 px-4">
-            <div class="hs-unfold">
-              <a class="js-hs-unfold-invoker btn btn-icon btn-xs btn-soft-secondary" href="javascript:;"
-                 data-hs-unfold-options='{
-                  "target": "#sidebarContent",
-                  "type": "css-animation",
-                  "animationIn": "fadeInRight",
-                  "animationOut": "fadeOutRight",
-                  "hasOverlay": "rgba(55, 125, 255, 0.1)",
-                  "smartPositionOff": true
-                 }'>
-                <svg width="10" height="10" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
-                </svg>
-               </a>
-            </div>
-          </div>
-          <!-- End Toggle Button -->
-
-          <!-- Content -->
-          <div class="scrollbar sidebar-body">
-            <div class="sidebar-content py-4 px-7">
-              <form class="js-validate">
-                <!-- Login -->
-                <div id="login">
-                  <!-- Title -->
-                  <div class="text-center mb-7">
-                    <h3 class="mb-0">Sign In to Front</h3>
-                    <p>Login to manage your account.</p>
-                  </div>
-                  <!-- End Title -->
-
-                  <!-- Input Group -->
-                  <div class="js-form-message mb-4">
-                    <label class="input-label">Email</label>
-                    <div class="input-group input-group-sm mb-2">
-                      <input type="email" class="form-control" name="email" id="signinEmail" placeholder="Email" aria-label="Email" required
-                             data-msg="Please enter a valid email address.">
-                    </div>
-                  </div>
-                  <!-- End Input Group -->
-
-                  <!-- Input Group -->
-                  <div class="js-form-message mb-3">
-                    <label class="input-label">Password</label>
-                    <div class="input-group input-group-sm mb-2">
-                      <input type="password" class="form-control" name="password" id="signinPassword" placeholder="Password" aria-label="Password" required
-                             data-msg="Your password is invalid. Please try again.">
-                    </div>
-                  </div>
-                  <!-- End Input Group -->
-
-                  <div class="d-flex justify-content-end mb-4">
-                    <a class="js-animation-link small link-underline" href="javascript:;"
-                       data-hs-show-animation-options='{
-                         "targetSelector": "#forgotPassword",
-                         "groupName": "idForm",
-                         "animationType": "css-animation",
-                         "animationIn": "slideInUp",
-                         "duration": 400
-                       }'>Forgot Password?</a>
-                  </div>
-
-                  <div class="mb-3">
-                    <button type="submit" class="btn btn-sm btn-primary btn-block">Sign In</button>
-                  </div>
-
-                  <div class="text-center mb-3">
-                    <span class="divider divider-xs divider-text">OR</span>
-                  </div>
-
-                  <a class="btn btn-sm btn-ghost-secondary btn-block mb-2" href="#">
-                    <span class="d-flex justify-content-center align-items-center">
-                      <img class="mr-2" src="assets/img/160x160/img17.png" alt="Image Description" width="14" height="14">
-                      Sign In with Google
-                    </span>
-                  </a>
-
-                  <div class="text-center">
-                    <span class="small text-muted">Do not have an account?</span>
-                    <a class="js-animation-link small font-weight-bold" href="javascript:;"
-                       data-hs-show-animation-options='{
-                         "targetSelector": "#signup",
-                         "groupName": "idForm",
-                         "animationType": "css-animation",
-                         "animationIn": "slideInUp",
-                         "duration": 400
-                       }'>Sign Up
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Signup -->
-                <div id="signup" style="display: none; opacity: 0;">
-                  <!-- Title -->
-                  <div class="text-center mb-7">
-                    <h3 class="mb-0">Create your account</h3>
-                    <p>Fill out the form to get started.</p>
-                  </div>
-                  <!-- End Title -->
-
-                  <!-- Input Group -->
-                  <div class="js-form-message mb-4">
-                    <label class="input-label">Email</label>
-                    <div class="input-group input-group-sm mb-2">
-                      <input type="email" class="form-control" name="email" id="signupEmail" placeholder="Email" aria-label="Email" required
-                             data-msg="Please enter a valid email address.">
-                    </div>
-                  </div>
-                  <!-- End Input Group -->
-
-                  <!-- Input Group -->
-                  <div class="js-form-message mb-4">
-                    <label class="input-label">Password</label>
-                    <div class="input-group input-group-sm mb-2">
-                      <input type="password" class="form-control" name="password" id="signupPassword" placeholder="Password" aria-label="Password" required
-                             data-msg="Your password is invalid. Please try again.">
-                    </div>
-                  </div>
-                  <!-- End Input Group -->
-
-                  <!-- Input Group -->
-                  <div class="js-form-message mb-4">
-                    <label class="input-label">Confirm Password</label>
-                    <div class="input-group input-group-sm mb-2">
-                      <input type="password" class="form-control" name="confirmPassword" id="signupConfirmPassword" placeholder="Confirm Password" aria-label="Confirm Password" required
-                             data-msg="Password does not match the confirm password.">
-                    </div>
-                  </div>
-                  <!-- End Input Group -->
-
-                  <div class="mb-3">
-                    <button type="submit" class="btn btn-sm btn-primary btn-block">Sign Up</button>
-                  </div>
-
-                  <div class="text-center mb-3">
-                    <span class="divider divider-xs divider-text">OR</span>
-                  </div>
-
-                  <a class="btn btn-sm btn-ghost-secondary btn-block mb-2" href="#">
-                    <span class="d-flex justify-content-center align-items-center">
-                      <img class="mr-2" src="assets/img/160x160/img17.png" alt="Image Description" width="14" height="14">
-                      Sign Up with Google
-                    </span>
-                  </a>
-
-                  <div class="text-center">
-                    <span class="small text-muted">Already have an account?</span>
-                    <a class="js-animation-link small font-weight-bold" href="javascript:;"
-                       data-hs-show-animation-options='{
-                         "targetSelector": "#login",
-                         "groupName": "idForm",
-                         "animationType": "css-animation",
-                         "animationIn": "slideInUp",
-                         "duration": 400
-                       }'>Sign In
-                    </a>
-                  </div>
-                </div>
-                <!-- End Signup -->
-
-                <!-- Forgot Password -->
-                <div id="forgotPassword" style="display: none; opacity: 0;">
-                  <!-- Title -->
-                  <div class="text-center mb-7">
-                    <h3 class="mb-0">Recover password</h3>
-                    <p>Instructions will be sent to you.</p>
-                  </div>
-                  <!-- End Title -->
-
-                  <!-- Input Group -->
-                  <div class="js-form-message">
-                    <label class="sr-only" for="recoverEmail">Your email</label>
-                    <div class="input-group input-group-sm mb-2">
-                      <input type="email" class="form-control" name="email" id="recoverEmail" placeholder="Your email" aria-label="Your email" required
-                             data-msg="Please enter a valid email address.">
-                    </div>
-                  </div>
-                  <!-- End Input Group -->
-
-                  <div class="mb-3">
-                    <button type="submit" class="btn btn-sm btn-primary btn-block">Recover Password</button>
-                  </div>
-
-                  <div class="text-center mb-4">
-                    <span class="small text-muted">Remember your password?</span>
-                    <a class="js-animation-link small font-weight-bold" href="javascript:;"
-                       data-hs-show-animation-options='{
-                         "targetSelector": "#login",
-                         "groupName": "idForm",
-                         "animationType": "css-animation",
-                         "animationIn": "slideInUp",
-                         "duration": 400
-                       }'>Login
-                    </a>
-                  </div>
-                </div>
-                <!-- End Forgot Password -->
-              </form>
-            </div>
-          </div>
-          <!-- End Content -->
-        </div>
-
-        <!-- Footer -->
-        <footer class="sidebar-footer border-top py-2 px-7">
-          <ul class="nav nav-sm">
-            <li class="nav-item">
-              <a class="nav-link pl-0" href="#">Privacy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Terms</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fas fa-info-circle la-lg"></i>
-              </a>
-            </li>
-          </ul>
-        </footer>
-        <!-- End Footer -->
-      </div>
-    </div>
-  </aside>
-  <!-- End Account Sidebar Navigation -->
-  <!-- ========== END SECONDARY CONTENTS ========== -->
-
-  <!-- Go to Top -->
-  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
-     data-hs-go-to-options='{
-       "offsetTop": 700,
-       "position": {
-         "init": {
-           "right": 15
-         },
-         "show": {
-           "bottom": 15
-         },
-         "hide": {
-           "bottom": -15
-         }
-       }
-     }'>
-    <i class="fas fa-angle-up"></i>
-  </a>
-  <!-- End Go to Top -->
-
   <!-- JS Global Compulsory -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery-migrate.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Importation de EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
   <!-- JS Implementing Plugins -->
   <script src="assets/js/hs-header.min.js"></script>
+  <script src="assets/js/hs-sticky-block.min.js"></script>
   <script src="assets/js/hs-unfold.min.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
   <script src="assets/js/hs-mega-menu.min.js"></script>
-  <script src="assets/js/typed.min.js"></script>
-  <script src="assets/js/hs-step-form.min.js"></script>
+  <script src="assets/js/hs-show-animation.min.js"></script>
+  <script src="assets/js/jquery.cubeportfolio.min.js"></script>
 
   <!-- JS Front -->
   <script src="assets/js/hs.core.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/dist/hs.validation.js"></script>
+  <script src="assets/js/hs.validation.js"></script>
   <script src="assets/js/hs.cubeportfolio.js"></script>
 
   <!-- JS Plugins Init. -->
@@ -604,6 +356,11 @@
           position: 'left'
         }
       }).init();
+
+      //Importation de EmailJS
+      (function(){
+        emailjs.init("OKrvm6duLRwNww8Sa");
+      })();
 
       // initialization of unfold
       var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
@@ -650,6 +407,33 @@
   <script>
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/js/polifills.js"><\/script>');
   </script>
+  <script>
+    document.getElementById('contactPlacement').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.send("service_fgqzjjv", "template_un7sdgd", {
+        first_name: document.getElementById('firstName').value,
+        last_name: document.getElementById('lastName').value,
+        email: document.getElementById('emailAddress').value,
+        phone: document.getElementById('phoneNumber').value,
+        message: document.getElementById('message').value
+    }).then(function(response) {
+        let resultElement = document.getElementById('result');
+        if (resultElement) {
+            resultElement.innerText = "Message envoyé avec succès!";
+        }
+        console.log("Email envoyé:", response);
+        document.getElementById('contactPlacement').reset();
+    }, function(error) {
+        let resultElement = document.getElementById('result');
+        if (resultElement) {
+            resultElement.innerText = "Erreur lors de l'envoi.";
+        }
+        console.log("Erreur:", error);
+    });
+  });
+
+</script>
   <script>
     // Fonction pour charger le header et le footer dynamiquement
     function loadComponent(id, file) {

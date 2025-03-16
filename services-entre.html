@@ -33,8 +33,9 @@
 <body>
   <!-- ========== HEADER ========== -->
   <div id="header-container"></div>
+    <!-- End Modal -->
   <!-- ========== END HEADER ========== -->
-  
+
   <!-- ========== MAIN ========== -->
   <main id="content" role="main">
     <!-- Description Section -->
@@ -54,7 +55,7 @@
             <!-- Item -->
             <div class="cbp-item">
               <div class="cbp-caption">
-                <img class="rounded" src="images/900x900/img11.jpg" alt="Image Description">
+                <img class="rounded" src="assets/images/services/img11.png" alt="Image Description">
               </div>
             </div>
             <!-- End Item -->
@@ -62,7 +63,7 @@
             <!-- Item -->
             <div class="cbp-item">
               <div class="cbp-caption">
-                <img class="rounded" src="images/600x400/img1.jpg" alt="Image Description">
+                <img class="rounded" src="assets/images/services/img1.png" alt="Image Description">
               </div>
             </div>
             <!-- End Item -->
@@ -70,7 +71,7 @@
             <!-- Item -->
             <div class="cbp-item">
               <div class="cbp-caption">
-                <img class="rounded" src="images/900x900/img12.jpg" alt="Image Description">
+                <img class="rounded" src="assets/images/services/img12.png" alt="Image Description">
               </div>
             </div>
             <!-- End Item -->
@@ -78,7 +79,7 @@
             <!-- Item -->
             <div class="cbp-item">
               <div class="cbp-caption">
-                <img class="rounded" src="images/900x900/img14.jpg" alt="Image Description">
+                <img class="rounded" src="assets/images/services/img14.png" alt="Image Description">
               </div>
             </div>
             <!-- End Item -->
@@ -86,7 +87,7 @@
             <!-- Item -->
             <div class="cbp-item">
               <div class="cbp-caption">
-                <img class="rounded" src="images/900x900/img15.jpg" alt="Image Description">
+                <img class="rounded" src="assets/images/services/img15.png" alt="Image Description">
               </div>
             </div>
             <!-- End Item -->
@@ -94,7 +95,7 @@
             <!-- Item -->
             <div class="cbp-item">
               <div class="cbp-caption">
-                <img class="rounded" src="images/400x600/img1.jpg" alt="Image Description">
+                <img class="rounded" src="assets/images/services/img18.png" alt="Image Description">
               </div>
             </div>
             <!-- End Item -->
@@ -102,7 +103,7 @@
             <!-- Item -->
             <div class="cbp-item">
               <div class="cbp-caption">
-                <img class="rounded" src="images/600x435/img1.jpg" alt="Image Description">
+                <img class="rounded" src="assets/images/services/img8.png" alt="Image Description">
               </div>
             </div>
             <!-- End Item -->
@@ -122,77 +123,149 @@
                  "stickyOffsetBottom": 130
                }'>
             <div class="mb-6">
-              <h1 class="h2 text-primary">Services aux entreprises</h1>
-              <p class="font-weight-bold">
-                Des solutions adaptées à vos besoins professionnels
+              <h1 class="h2 text-primary">Déménagement</h1>
+              <p style="line-height: 1.6;">
+                <span class="font-weight-bold">Un déménagement sans stress et en toute sécurité !</span></br>
+                Nous vous proposons des services de déménagement résidentiel et commercial. Notre 
+                équipe qualifiée prend en charge l'emballage, le transport et l'installation de vos biens avec le plus grand soin.
               </p>
-              <p>
-                Nous proposons des services de gestion administrative, logistique et technique pour les entreprises de toutes tailles.
-              </p>
+              <a  type="button" data-toggle="modal" data-target=".Services"
+                class="btn btn-sm btn-primary mx-auto py-2 px-5 transition-3d-hover"  href="#">
+                  Devis
+              </a>
             </div>
+
+            <!-- Modal -->
+          <div class="modal fade Services" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title h4 d-flex" id="myLargeModalLabel">Choisissez un service pour votre demande de devis</h5>
+                        <button type="button" class="btn btn-xs bg-light btn-icon btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
+                            <i class="tio-clear tio-lg"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body py-4">
+                      <form id="contactServic" class="js-validate">
+                        <div class="row mx-n2">
+                            <div class="col-sm-6">
+                              <!-- Form Group -->
+                              <div class="js-form-message form-group">
+                                <label for="firstName lib-contactServic" class="input-label">First name</label>
+                                <input type="text" class="form-control size-input" name="firstName" id="firstName" 
+                                  placeholder="Nataly" aria-label="Nataly" required
+                                  data-msg="Please enter first your name">
+                              </div>
+                              <!-- End Form Group -->
+                            </div>
+
+                            <div class="col-sm-6">
+                              <!-- Form Group -->
+                              <div class="js-form-message form-group">
+                                <label for="lastName lib-contactServic" class="input-label">Last name</label>
+                                <input type="text" class="form-control size-input" name="lastName" id="lastName" 
+                                  placeholder="Gaga" aria-label="Gaga" required
+                                      data-msg="Please enter last your name">
+                              </div>
+                              <!-- End Form Group -->
+                            </div>
+
+                            <div class="col-sm-12">
+                              <!-- Form Group -->
+                              <div class="js-form-message form-group">
+                                <label for="emailAddress lib-contactServic" class="input-label">Email address</label>
+                                <input type="email" class="form-control size-input" name="emailAddress" id="emailAddress" 
+                                  placeholder="jondoe@gexempl.com" aria-label="jondoe@gexempl.com" required
+                                      data-msg="Please enter a valid email address">
+                              </div>
+                              <!-- End Form Group -->
+                            </div>
+
+                            <div class="col-sm-12">
+                              <!-- Form Group -->
+                              <div class="js-form-message form-group">
+                                <label for="phoneNumber lib-contactServic" class="input-label">phone </label>
+                                <input type="phone" class="form-control size-input" name="phoneNumber" id="phoneNumber" 
+                                  placeholder="+1 (062) 109-9222" data-msg="Please enter a valid phone number">
+                              </div>
+                              <!-- End Form Group -->
+                            </div>
+
+                            <div class="col-sm-12">
+                              <!-- Form Group -->
+                              <div class="js-form-message form-group">
+                                <label for="message lib-contactServic" class="input-label">Message</label>
+                                <div class="input-group">
+                                  <textarea class="form-control" rows="4" name="message" id="message" placeholder="Hi there, I would like to ..." 
+                                    aria-label="Hi there, I would like to ..." required
+                                    data-msg="Please enter a reason.">
+                                  </textarea>
+                                </div>
+                              </div>
+                              <!-- End Form Group -->
+                            </div>
+                            <div class="col-12 text-center mb-4">
+                              <button type="submit" class="btn w-50 py-2 btn-primary transition-3d-hover">Submit</button>
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- End Modal -->
 
             <hr class="my-5">
 
             <!-- List -->
             <ul class="list-unstyled mb-0">
-              <li class="media mb-1">
-                <div class="d-flex w-40 w-sm-30">
-                  <figure class="max-w-8rem w-100 mx-auto mb-4">
-                    <img class="img-fluid" src="svg/icon-4.svg" alt="SVG">
-                  </figure>
-                  <h2 class="h4">Client</h2>
-                </div>
+              <!-- List -->
+              <div class="">
+                <h2 class="h4 mb-3"> Nos prestations : </h2>
                 <div class="media-body">
-                  <small class="text-muted">
-                    Htmlstream
-                  </small>
+                  <ul>
+                    <li class="text-muted small lines">
+                      Emballage et protection des meubles avec du matériel de qualité.
+                    </li>
+                    <li class="text-muted small lines">
+                      Transport sécurisé avec des véhicules adaptés.
+                    </li>
+                    <li class="text-muted small lines">
+                      Montage et démontage des meubles pour un gain de temps.
+                    </li>
+                    <li class="text-muted small lines">
+                      Service de garde-meubles sécurisé et flexible.
+                    </li>
+                    <li class="text-muted small lines">
+                      Gestion des autorisations et stationnements pour le déménagement.
+                    </li>
+                  </ul>
                 </div>
-              </li>
+              </div>
+            </ul>
+            <!-- End List -->
 
-              <li class="media mb-1">
-                <div class="d-flex w-40 w-sm-30">
-                  <h3 class="h4">Designers</h3>
-                </div>
-                <div class="media-body">
-                  <small class="text-muted">
-                    Christina Kray,
-                  </small>
-                  <small class="text-muted">
-                    Jeff Fisher
-                  </small>
-                </div>
-              </li>
+            <hr class="my-5">
 
-              <li class="media mb-1">
-                <div class="d-flex w-40 w-sm-30">
-                  <h4>Partners</h4>
-                </div>
+            <!-- List -->
+            <ul class="list-unstyled mb-0">
+              <!-- List -->
+              <div class="">
+                <h2 class="h4 mb-3"> Pourquoi nous choisir ? </h2>
                 <div class="media-body">
-                  <small class="text-muted">
-                    Pixeel
-                  </small>
+                  <ul>
+                    <li class="text-muted small lines">
+                      Une équipe expérimentée et ponctuelle.
+                    </li>
+                    <li class="text-muted small lines">
+                      Des assurances pour protéger vos biens.
+                    </li>
+                    <li class="text-muted small lines">
+                      Un devis transparent sans frais cachés
+                    </li>
+                  </ul>
                 </div>
-              </li>
-
-              <li class="media">
-                <div class="d-flex w-40 w-sm-30">
-                  <h4>Awards</h4>
-                </div>
-                <div class="media-body">
-                  <small class="d-block text-muted mb-1">
-                    FWA Site of the Day
-                  </small>
-                  <small class="d-block text-muted mb-1">
-                    Awwwards Site of the Day
-                  </small>
-                  <small class="d-block text-muted mb-1">
-                    CSSAwards Site of the Day
-                  </small>
-                  <small class="d-block text-muted">
-                    Bronze ADCN Lamp (Digital Craft)
-                  </small>
-                </div>
-              </li>
+              </div>
             </ul>
             <!-- End List -->
 
@@ -213,17 +286,12 @@
                   </li>
                   <li class="list-inline-item">
                     <a class="btn btn-xs btn-icon btn-soft-secondary" href="#">
-                      <i class="fab fa-google"></i>
+                      <i class="fab fa-linkedin"></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
                     <a class="btn btn-xs btn-icon btn-soft-secondary" href="#">
                       <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn btn-xs btn-icon btn-soft-secondary" href="#">
-                      <i class="fab fa-github"></i>
                     </a>
                   </li>
                 </ul>
@@ -253,28 +321,22 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery-migrate.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Importation de EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
   <!-- JS Implementing Plugins -->
   <script src="assets/js/hs-header.min.js"></script>
+  <script src="assets/js/hs-sticky-block.min.js"></script>
   <script src="assets/js/hs-unfold.min.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
   <script src="assets/js/hs-mega-menu.min.js"></script>
-  <script src="assets/js/typed.min.js"></script>
-  <script src="assets/js/hs-step-form.min.js"></script>
-
-
-  <!--
-  <script src="../../assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
-  
-  <script src="../../assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
-  <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
-  <script src="../../assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-  <script src="../../assets/vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
-  -->
+  <script src="assets/js/hs-show-animation.min.js"></script>
+  <script src="assets/js/jquery.cubeportfolio.min.js"></script>
 
   <!-- JS Front -->
   <script src="assets/js/hs.core.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/dist/hs.validation.js"></script>
+  <script src="assets/js/hs.validation.js"></script>
   <script src="assets/js/hs.cubeportfolio.js"></script>
 
   <!-- JS Plugins Init. -->
@@ -294,6 +356,11 @@
           position: 'left'
         }
       }).init();
+
+      //Importation de EmailJS
+      (function(){
+        emailjs.init("OKrvm6duLRwNww8Sa");
+      })();
 
       // initialization of unfold
       var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
@@ -340,6 +407,33 @@
   <script>
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/js/polifills.js"><\/script>');
   </script>
+  <script>
+    document.getElementById('contactServic').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.send("service_fgqzjjv", "template_un7sdgd", {
+        first_name: document.getElementById('firstName').value,
+        last_name: document.getElementById('lastName').value,
+        email: document.getElementById('emailAddress').value,
+        phone: document.getElementById('phoneNumber').value,
+        message: document.getElementById('message').value
+    }).then(function(response) {
+        let resultElement = document.getElementById('result');
+        if (resultElement) {
+            resultElement.innerText = "Message envoyé avec succès!";
+        }
+        console.log("Email envoyé:", response);
+        document.getElementById('contactServic').reset();
+    }, function(error) {
+        let resultElement = document.getElementById('result');
+        if (resultElement) {
+            resultElement.innerText = "Erreur lors de l'envoi.";
+        }
+        console.log("Erreur:", error);
+    });
+  });
+
+</script>
   <script>
     // Fonction pour charger le header et le footer dynamiquement
     function loadComponent(id, file) {
