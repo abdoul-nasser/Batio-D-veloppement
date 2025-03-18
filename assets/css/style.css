@@ -32,3 +32,10 @@
   line-height: 1.4;
   margin-bottom: 0.5rem;
 }
+.nasser{
+  color: #dfe1e4;
+  text-decoration: underline;
+}
+.nasser:hover{
+  color: #fff;
+}

@@ -410,103 +410,102 @@
 
     <div id="footer-container"></div>
 
-  <!-- JS Global Compulsory -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery-migrate.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Global Compulsory -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-migrate.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-  <!-- JS Implementing Plugins -->
-  <script src="assets/js/hs-header.min.js"></script>
-  <script src="assets/js/hs-unfold.min.js"></script>
-  <script src="assets/js/hs-mega-menu.min.js"></script>
-  <script src="assets/js/typed.min.js"></script>
-  <script src="assets/js/hs-step-form.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script src="assets/js/hs-header.min.js"></script>
+    <script src="assets/js/hs-unfold.min.js"></script>
+    <script src="assets/js/hs-mega-menu.min.js"></script>
+    <script src="assets/js/typed.min.js"></script>
+    <script src="assets/js/hs-step-form.min.js"></script>
 
     <!--
-  <script src="js/hs-go-to.min.js"></script>
-  <script src="js/hs-show-animation.min.js"></script>
-  <script src="js/hs-sticky-block.min.js"></script>
-  <script src="js/hs-counter.min.js"></script>
-  <script src="js/appear.js"></script>
-  <script src="js/jquery.cubeportfolio.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/dzsparallaxer.js"></script>
-  <script src="js/typed.min.js"></script>
-  <script src="js/aos.js"></script>-->
+    <script src="js/hs-go-to.min.js"></script>
+    <script src="js/hs-show-animation.min.js"></script>
+    <script src="js/hs-sticky-block.min.js"></script>
+    <script src="js/hs-counter.min.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/jquery.cubeportfolio.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/dzsparallaxer.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/aos.js"></script>-->
 
-  <!-- JS Front -->
-  <script src="assets/js/hs.core.js"></script>
-  <script src="assets/js/script.js"></script>
+    <!-- JS Front -->
+    <script src="assets/js/hs.core.js"></script>
+    <script src="assets/js/script.js"></script>
 
+    <script>
 
+        // Charger après l’insertion du header
+        document.addEventListener("DOMContentLoaded", function () {
+            setActiveNavLink();
+        });
 
-  <script>
-
-    // Charger après l’insertion du header
-    document.addEventListener("DOMContentLoaded", function () {
-        setActiveNavLink();
-    });
-
-    //How to use?
-    $(document).on('ready', function () {
-        // initialization of header
-        var header = new HSHeader($('#header')).init();
-    });
+        //How to use?
+        $(document).on('ready', function () {
+            // initialization of header
+            var header = new HSHeader($('#header')).init();
+        });
 
 
-    //Using mega menu with header 
-    $(window).on('ready', function () {
-        // initialization of mega menu
-        var megaMenu = new HSMegaMenu($('.js-mega-menu')).init();
-    });
+        //Using mega menu with header 
+        $(window).on('ready', function () {
+            // initialization of mega menu
+            var megaMenu = new HSMegaMenu($('.js-mega-menu')).init();
+        });
 
 
-    //Using unfold.js with header
-    $(document).on('ready', function () {
+        //Using unfold.js with header
+        $(document).on('ready', function () {
+            // initialization of unfold
+            var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+        });
+
+        // initialization of text animation (typing)
+        var typed = new Typed(".js-text-animation", {
+            strings: ["déménagement.", "démolition.", "recrutement."],
+            typeSpeed: 90,
+            loop: true,
+            backSpeed: 30,
+            backDelay: 2500
+        });
+
+        //Step Forms
+        $(document).on('ready', function () {
+            // initialization of step form
+            $('.js-step-form').each(function () {
+            var stepForm = new HSStepForm($(this)).init();
+            });
+        });
+
+        $(document).on('ready', function () {
         // initialization of unfold
-        var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
-    });
-
-     // initialization of text animation (typing)
-    var typed = new Typed(".js-text-animation", {
-        strings: ["déménagement.", "démolition.", "recrutement."],
-        typeSpeed: 90,
-        loop: true,
-        backSpeed: 30,
-        backDelay: 2500
-    });
-
-    //Step Forms
-    $(document).on('ready', function () {
-        // initialization of step form
-        $('.js-step-form').each(function () {
-        var stepForm = new HSStepForm($(this)).init();
+        $('.js-unfold-invoker').each(function () {
+        var unfold = new HSUnfold($(this)).init();
         });
     });
 
-    $(document).on('ready', function () {
-    // initialization of unfold
-    $('.js-unfold-invoker').each(function () {
-      var unfold = new HSUnfold($(this)).init();
-    });
-  });
+    </script>
 
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        fetch("header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.body.insertAdjacentHTML("afterbegin", data);
-            });
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.body.insertAdjacentHTML("afterbegin", data);
+                });
 
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.body.insertAdjacentHTML("beforeend", data);
-            });
-    });
-</script>
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.body.insertAdjacentHTML("beforeend", data);
+                });
+        });
+    </script>
 
 
 </body>
