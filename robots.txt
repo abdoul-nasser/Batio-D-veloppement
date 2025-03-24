@@ -1,3 +1,7 @@
-User-agent: *
-Disallow: /admin/
+User-agent: *  
+Disallow: /admin/  
+Disallow: /private/  
+Disallow: /temp/  
+Allow: /  
+
 Sitemap: https://www.batiodeveloppement.com/sitemap.xml
